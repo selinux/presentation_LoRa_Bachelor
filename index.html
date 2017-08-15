@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+	  <head>
+		    <meta charset="utf-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		    <title>LoRa Localisation</title>
+
+		    <link rel="stylesheet" href="css/reveal.css">
+		    <link rel="stylesheet" href="css/theme/solarized.css">
+		    <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
+		    <!-- <link rel="stylesheet" href="css/theme/league.css"> -->
+		    <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
+
+		    <!-- Theme used for syntax highlighting of code -->
+		    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+		    <!-- Printing and PDF exports -->
+		    <script>
+			   var link = document.createElement( 'link' );
+			   link.rel = 'stylesheet';
+			   link.type = 'text/css';
+			   link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			   document.getElementsByTagName( 'head' )[0].appendChild( link );
+		    </script>
+	  </head>
+	  <body>
+		    <div class="reveal">
+			      <div class="slides">
+
+                <!-- Title -->
+                <section>
+                    <p style="font-size: 150%">LoRa localisation</p>
+                    <p style="font-size: 80%">HESSO - hepia</p>
+                    <p style="font-size: 50%">ITI </p>
+                    <p style="font-size: 50%">Sebastien Chassot - <a href="mailto:sebastien.chassot@etu.hesge.ch">sebastien.chassot@etu.hesge.ch</a></p>
+                    <br>
+                    <br>
+                    <p style="font-size: 30%">follow presentation on...<a href="https://selinux.github.io/localisation_lora_presentation">https://selinux.github.io/localisation_lora_presentation</a></p>
+                </section>
+
+                <!-- Slide 1 -->
+                <section>
+                    <section>
+                        Localisation par <em>Difference Time of Arrival</em>
+                        <hr>
+                    </section>
+                    <section>
+                        <p>trilatération</p>
+                        <img src="trilateration.png" height="250">
+                        <ul>
+                            <p class="fragment fade-in">synchronisation des horloges R1,R2,R3</p>
+                            <p class="fragment fade-in">détection de la réception et timestamp</p>
+                            <p class="fragment fade-in">on peut ainsi en déduire la position de E</p>
+                        </ul>
+                    </section>
+
+                    <section>
+                        Synchronisation par GPSDO
+                        <hr>
+                        <ul>
+                            <p style="font-size: 90%" class="fragment fade-in">utilisation du signal PPS (pulse per seconde) du GPS</p>
+                            <p style="font-size: 90%" class="fragment fade-in">précision GPSDO de l'ordre de la ns</p>
+                            <p style="font-size: 90%" class="fragment fade-in">précision du compteur du FPGA 20ns (50MHz)</p>
+                        </ul>
+                        <p class="fragment fade-in">Une onde radio parcourt ~5m en 20ns</p>
+                    </section>
+                </section>
+
+                <!-- Slide 2 -->
+                <section>
+                    <section>
+                        <p>Outils de développement</p>
+                        <img src="illustration_B200.png" height="200">
+                        <hr>
+                        <ul>
+                            <p class="fragment fade-in">Software Defined Radio - SDR</p>
+                            <p class="fragment fade-in">permet l'aquisition/traitement d'un signal radio</p>
+                            <p class="fragment fade-in">FPGA Xilinx Spartan 6</p>
+                            <p class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- Slide 3 -->
+				        <section>
+
+                    <section>
+                        <p>Vue d'ensemble USRP B200</p>
+                        <img src="vue_d_ensemble.png" height="300">
+                        <ul>
+                            <p style="font-size: 80%" class="fragment fade-in">multitude de bus (wishbone, AXI-stream, GPIF,...)</p>
+                            <p style="font-size: 80%" class="fragment fade-in">flux de contrôle, radio RX/TX et UART entrelacés</p>
+                        </ul>
+                    </section>
+                    <section>
+                        Implémentation
+                        <img src="block_lora_detect_RTL.png" height="300">
+                        <ul>
+                            <p style="font-size: 90%" class="fragment highlight-red">compteur interne synchronisé</p>
+                            <p style="font-size: 90%" class="fragment highlight-blue">trigger par detection ou manuelle</p>
+                            <p style="font-size: 90%">relecture via le protocole de la carte</p>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <!-- Slide 4 -->
+                <section>
+                    <section>
+                        <p>Travail en cours</p>
+                        <ul>
+                            <p class="fragment fade-in">Hijack des registres, du GPS et de l'API C++</p>
+                            <hr>
+                            <p class="fragment fade-in">ajout des registres dans le FPGA</p>
+                            <p class="fragment fade-in">extension de l'API pour permettre une communication entre l'OS et le matériel</p>
+                            <p class="fragment fade-in">détourner l'API pour qu'elle reconnaisse le GPS</p>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- Slide 5 -->
+                <section>
+                    <section>
+                        <p>Travail à effectuer</p>
+                        <hr>
+                        <ul>
+                            <p class="fragment fade-in">évaluer la synchronisation des récepteurs</p>
+                            <p class="fragment fade-in">implémenter l'algorithme de detection de paquets LoRa</p>
+                            <p class="fragment fade-in">écrire un programme exploitant la nouvelle API</p>
+                            <p class="fragment fade-in">faire des tests grandeur nature</p>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- End slides -->
+                <section>
+                    <section>
+                        <h1>Questions ?</h1>
+                        <p>liens</p>
+                        <ul>
+                            <p style="font-size: 70%"><a href="https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy">https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy</a> (vidéo)</p>
+                            <p style="font-size: 70%"><a href="https://github.com/selinux/uhd">https://github.com/selinux/uhd</a> (code du projet)</p>
+                            <p style="font-size: 70%"><a href="https://github.com/selinux/fpga">https://github.com/selinux/fpga</a> (code de la partie FPGA)</p>
+                            <p style="font-size: 70%"><a href="http://files.ettus.com/manual/index.html">http://files.ettus.com/manual/index.html</a> (doc)</p>
+                            <p style="font-size: 70%"><a href="https://en.wikipedia.org/wiki/Software-defined_radio">https://en.wikipedia.org/wiki/Software-defined_radio</a></p>
+                        </ul>
+                    <br>
+                    <p style="font-size: 30%">follow presentation on...<a href="https://selinux.github.io/localisation_lora_presentation">https://selinux.github.io/localisation_lora_presentation</a></p>
+                    </section>
+                </section>
+			      </div>
+		    </div>
+
+		    <script src="lib/js/head.min.js"></script>
+		    <script src="js/reveal.js"></script>
+
+		    <script>
+			   // More info about config & dependencies:
+			          // - https://github.com/hakimel/reveal.js#configuration
+			   // - https://github.com/hakimel/reveal.js#dependencies
+			   Reveal.initialize({
+
+             //minScale: 0.2,
+             //maxScale: 1.0,
+             //transition: 'convex-in concave-out',
+             controls: true,
+             progress: true,
+             slideNumber: true,
+             overview: true,
+    	       center: true,
+             showNotes: false,
+             // Transition style for full page slide backgrounds  // none/fade/slide/convex/concave/zoom
+    	       backgroundTransition: 'fade',
+    	       // Number of slides away from the current that are visible
+             viewDistance: 3,
+
+             math: {
+                 mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                 config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+             },
+
+    				 dependencies: [
+    					   { src: 'plugin/markdown/marked.js' },
+    					   { src: 'plugin/markdown/markdown.js' },
+    					   { src: 'plugin/notes/notes.js', async: true },
+    					   { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                 { src: 'plugin/math/math.js', async: true },
+                 { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
+                 { src: 'reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
+                 // Zoom in and out with Alt+click
+    		         { src: 'plugin/zoom-js/zoom.js', async: true },
+                 // Speaker notes
+    		         { src: 'plugin/notes/notes.js', async: true },
+             ]
+         });
+		    </script>
+	  </body>
+</html>
