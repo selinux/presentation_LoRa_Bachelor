@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="schema_DToA_2d.svg"
-   inkscape:export-filename="/home/seba/documents/hepia/lora/presentations/images/schema_DToA_2d_0.png"
+   inkscape:export-filename="/home/seba/documents/hepia/lora/presentations/presentation_LoRa_Bachelor/images/schema_DToA_2d_5.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06">
@@ -272,7 +272,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(2.5023058,-56.80424)"
-     style="display:inline">
+     style="display:none">
     <g
        id="g4838">
       <circle
@@ -332,7 +332,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="slide1"
-     style="display:inline">
+     style="display:none">
     <circle
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:1.01534224;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter1770)"
        id="path817-6"
@@ -400,7 +400,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="slide2"
-     style="display:inline">
+     style="display:none">
     <g
        transform="translate(2.5023058,-56.80424)"
        id="g4768">
@@ -469,7 +469,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="slide3"
-     style="display:inline">
+     style="display:none">
     <g
        transform="translate(2.5023058,-56.80424)"
        id="g4798"
@@ -539,7 +539,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="slide4"
-     style="display:inline">
+     style="display:none">
     <g
        transform="translate(2.5023058,-56.80424)"
        id="g4888"

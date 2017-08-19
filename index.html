@@ -39,20 +39,6 @@
                     <p style="font-size: 150%"><a href="https://selinux.github.io/presentation_LoRa_Bachelor">https://goo.gl/wVitFB</a></p>
                 </section>
 
-                    <section>
-                         <div data-svg-fragment="images/schema_DToA_2d_test.svg"></div>
-                    </section>
-                    <section data-transition="none">
-<!--                        Conversion du temps en distance
-<hr>-->
-                        <div data-svg-fragment="images/schema_DToA_2d.svg#[*|label=slide0]">
-                          <a class="fragment" href="[*|label=slide1]"></a>
-                          <a class="fragment" href="[*|label=slide2]"></a>
-                          <a class="fragment" href="[*|label=slide3]"></a>
-                          <a class="fragment" href="[*|label=slide4]"></a>
-                          <a class="fragment" href="[*|label=slide5]"></a>
-                        </div>
-                    </section>
                 <!-- Title -->
                 <section> 
                     <img src="logo_hepia.png" width="2300">
@@ -144,9 +130,9 @@
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Les récepteurs ont besoin d'être synchronisés</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
                     </section>
-                    <section data-transition="none">
-<!--                        Conversion du temps en distance
-<hr>-->
+                    <!-- <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
                         <div data-svg-fragment="images/schema_DToA_2d.svg#[*|label=slide0]">
                           <a class="fragment" href="[*|label=slide1]"></a>
                           <a class="fragment" href="[*|label=slide2]"></a>
@@ -154,9 +140,13 @@
                           <a class="fragment" href="[*|label=slide4]"></a>
                           <a class="fragment" href="[*|label=slide5]"></a>
                         </div>
+                    </section> -->
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_0.png" height="500">
                     </section>
                     <section data-transition="none">
-                         <div data-svg-fragment="images/schema_DToA_2d.svg"></div>
                         Conversion du temps en distance
                         <hr>
                         <img src="images/schema_DToA_2d_1.png" height="500">
@@ -170,6 +160,24 @@
                         Conversion du temps en distance
                         <hr>
                         <img src="images/schema_DToA_2d_3.png" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_4.png" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_5.png" height="500">
+                    </section>
+                    <!-- Notion de temps -->
+                    <section data-transition="none">
+                        Notions de temps et de distances
+                        <hr>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>50 MHz == à un période de 20 ns soit 4 mètres</p>
                     </section>
                 </section>
 
@@ -238,6 +246,7 @@
                     <section>
                         La synchronisation des récepteurs
                         <hr>
+                        <img style="float: center" src="images/img_counter_basys3.png" height="550">
                     </section>
                 </section>
 
@@ -330,6 +339,7 @@
                 // More info about config & dependencies:
 			    // - https://github.com/hakimel/reveal.js#configuration
 			    // - https://github.com/hakimel/reveal.js#dependencies
+
 			    Reveal.initialize({
                     //minScale: 0.2,
                     //maxScale: 1.0,
@@ -357,15 +367,15 @@
              },
 
     		dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
 				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                 { src: 'plugin/math/math.js', async: true },
                 { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
-                { src: 'reveal-svg-fragment.js', 
-                    condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } 
-                },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+<!--                { src: 'plugin/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }, -->
                 // Zoom in and out with Alt+click
 	            { src: 'plugin/zoom-js/zoom.js', async: true },
                 // Speaker notes
