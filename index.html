@@ -7,11 +7,11 @@
 		    <title>Localisation de LoRa par DToA</title>
 
 		    <link rel="stylesheet" href="css/reveal.css">
+		    <link rel="stylesheet" href="css/theme/moon.css"> 
             <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
 		    <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
-		    <link rel="stylesheet" href="css/theme/league.css"> 
-		    <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
+		    <!-- <link rel="stylesheet" href="css/theme/league.css"> -->
 
 		    <!-- Theme used for syntax highlighting of code -->
 		    <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,7 +40,7 @@
                     <img src="logo_hepia.png" width="2300">
                     <p></p>
                     <p style="font-size: 150%">Localisation de LoRa par DToA</p>
-                    <p style="font-size: 60%">Présentation de thèse de Bachelor</p>
+                    <p style="font-size: 60%">Présentation thèse de Bachelor</p>
                     <p style="font-size: 80%">par Sebastien Chassot</p>
                     <p style="font-size: 60%">Ingénierie des technologies de l'information avec orientation en Informatique matérielle</p>
                     <p style="font-size: 80%">HESSO - hepia</p>
@@ -55,8 +55,8 @@
                    <p style="font-size: 100%">Table des matières</p>
                    <hr>
                    <p style="font-size: 50%" align=left>Introduction</p>
-                   <p style="font-size: 50%" align=left>Le principe du DToA</p>
                    <p style="font-size: 50%" align=left>Qu'est-ce que LoRa ?</p>
+                   <p style="font-size: 50%" align=left>Le principe du DToA</p>
                    <p style="font-size: 50%" align=left>Software Define Radio (SDR)</p>
                    <p style="font-size: 50%" align=left>L'architecture du système</p>
                    <p style="font-size: 50%" align=left>Le matériel utilisé</p>
@@ -70,21 +70,18 @@
 
                 <!-- Introduction -->
                 <section>
-                   <p style="font-size: 100%">Introduction</p>
-                   <hr>
-                   <p class="fragment fade-in" style="font-size: 80%" align=left>Choix du sujet</p>
-                   <p class="fragment fade-in" style="font-size: 80%" align=left>Travail exploratoire</p>
-                   <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
-                   <p class="fragment fade-in" style="font-size: 80%" align=left></p>
-                </section>
-
-                <!-- Le principe du DToA -->
-                <section>
-                    <section>
-                        Localisation par <em>Difference in Time of Arrival</em>
-                        <hr>
-                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
-                    </section>
+                    <p style="font-size: 100%">Introduction</p>
+                    <hr>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Choix du sujet</p>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Travail exploratoire</p>
+                    <aside class="notes">
+                    Notes Introduction.<br>
+                    - Choix FPGA, traitement signal, temps réel<br>
+                    - <br>
+                    - Objectif localiser un objet<br>
+                    - <br>
+                    </aside>
                 </section>
 
                 <!-- Qu'est-ce que LoRa ? -->
@@ -92,8 +89,55 @@
                     <section>
                         Qu'est-ce que LoRa ?
                         <hr>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>La couche PHY et LoRaWAN</p>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Une modulation</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Lien RF pour applications IoT</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Innovation technologique Semtech</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une modulation simple et efficace</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>LoRa la couche PHY et LoRaWAN la couche de routage</p>
+                        <p class="fragment fade-in" style="font-size: 100%" align=left>Lien faible consommation couvrant de grandes distances</p>
+                    <aside class="notes">
+                    Notes LoRa.<br>
+                    - Distances mesurables (grandes)<br>
+                    - Lien principalement ascendant<br>
+                    - État de veille<br>
+                    - <br>
+                    </aside>
+                    </section>
+
+                </section>
+
+                <!-- Le principe du DToA -->
+                <section>
+                    <section>
+                        Localisation par <em>Difference in Time of Arrival</em>
+                        <hr>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Choix du sujet</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail exploratoire</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_0.png" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_1.png" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_2.png" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_3.png" height="500">
+                    </section>
+                    <section>
+                        Localisation par <em>Difference in Time of Arrival</em>
+                        <hr>
+                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
                     </section>
                 </section>
 
@@ -110,6 +154,14 @@
                         Software Defined Radio <em>SDR</em>
                         <hr>
                         <img src="img_AD9364_schema.png" height="400">
+                    </section>
+                    <!-- Le SDR -->
+                    <section>
+                        L'intérêt du <em>SDR</em>
+                        <hr>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Pour le prototypage</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>50 Mega samples par seconde</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail sur une plage de fréquences étendue (de 70MHz à 6GHz)</p>
                     </section>
                 </section>
 
@@ -230,44 +282,44 @@
 		    <script src="js/reveal.js"></script>
 
 		    <script>
-			   // More info about config & dependencies:
-			          // - https://github.com/hakimel/reveal.js#configuration
-			   // - https://github.com/hakimel/reveal.js#dependencies
-			   Reveal.initialize({
-
-             //minScale: 0.2,
-             //maxScale: 1.0,
-             //transition: 'convex-in concave-out',
-             transition: 'convex',
-             controls: true,
-             progress: true,
-             slideNumber: 'c/t',
-             showSlideNumber: 'all',
-             overview: true,
-    	       center: true,
-             showNotes: false,
-             // Transition style for full page slide backgrounds  // none/fade/slide/convex/concave/zoom
-    	       backgroundTransition: 'fade',
-    	       // Number of slides away from the current that are visible
-             viewDistance: 3,
+                // More info about config & dependencies:
+			    // - https://github.com/hakimel/reveal.js#configuration
+			    // - https://github.com/hakimel/reveal.js#dependencies
+			    Reveal.initialize({
+                    //minScale: 0.2,
+                    //maxScale: 1.0,
+                    //transition: 'convex-in concave-out',
+                    transition: 'convex',
+                    controls: true,
+                    progress: true,
+                    slideNumber: 'c/t',
+                    showSlideNumber: 'all',
+                    overview: true,
+                    center: true,
+                    showNotes: false,
+                    // Transition style for full page slide backgrounds  // none/fade/slide/convex/concave/zoom
+                    backgroundTransition: 'fade',
+                    // Number of slides away from the current that are visible
+                    viewDistance: 3,
 
              math: {
                  mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
                  config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
              },
 
-    				 dependencies: [
-    					   { src: 'plugin/markdown/marked.js' },
-    					   { src: 'plugin/markdown/markdown.js' },
-    					   { src: 'plugin/notes/notes.js', async: true },
-    					   { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                 { src: 'plugin/math/math.js', async: true },
-                 { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
-                 { src: 'reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
-                 // Zoom in and out with Alt+click
-    		         { src: 'plugin/zoom-js/zoom.js', async: true },
-                 // Speaker notes
-    		         { src: 'plugin/notes/notes.js', async: true },
+    		dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/math/math.js', async: true },
+                { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
+                { src: 'reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
+                // Zoom in and out with Alt+click
+	            { src: 'plugin/zoom-js/zoom.js', async: true },
+                // Speaker notes
+                { src: 'socket.io/socket.io.js', async: true },
+        		{ src: 'plugin/notes-server/client.js', async: true },
              ]
          });
 		    </script>
