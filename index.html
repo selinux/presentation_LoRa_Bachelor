@@ -4,10 +4,14 @@
 		    <meta charset="utf-8">
 		    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+            <meta name="description" content="Présentation travail de Bachelor">
+            <meta name="author" content="Sebastien Chassot (sebastien.chassot@etu.hesge.ch)">
+
+
 		    <title>Localisation de LoRa par DToA</title>
 
 		    <link rel="stylesheet" href="css/reveal.css">
-		    <link rel="stylesheet" href="css/theme/moon.css"> 
+		    <link rel="stylesheet" href="css/theme/solarized.css"> 
             <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
 		    <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
@@ -35,6 +39,20 @@
                     <p style="font-size: 150%"><a href="https://selinux.github.io/presentation_LoRa_Bachelor">https://goo.gl/wVitFB</a></p>
                 </section>
 
+                    <section>
+                         <div data-svg-fragment="images/schema_DToA_2d_test.svg"></div>
+                    </section>
+                    <section data-transition="none">
+<!--                        Conversion du temps en distance
+<hr>-->
+                        <div data-svg-fragment="images/schema_DToA_2d.svg#[*|label=slide0]">
+                          <a class="fragment" href="[*|label=slide1]"></a>
+                          <a class="fragment" href="[*|label=slide2]"></a>
+                          <a class="fragment" href="[*|label=slide3]"></a>
+                          <a class="fragment" href="[*|label=slide4]"></a>
+                          <a class="fragment" href="[*|label=slide5]"></a>
+                        </div>
+                    </section>
                 <!-- Title -->
                 <section> 
                     <img src="logo_hepia.png" width="2300">
@@ -89,11 +107,12 @@
                     <section>
                         Qu'est-ce que LoRa ?
                         <hr>
+                        <img style="float: right" src="images/img_illustration_LoRaMote.jpg" height="300">
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Lien RF pour applications IoT</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Innovation technologique Semtech</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Innovation technologique - Semtech</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Une modulation simple et efficace</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>LoRa la couche PHY et LoRaWAN la couche de routage</p>
-                        <p class="fragment fade-in" style="font-size: 100%" align=left>Lien faible consommation couvrant de grandes distances</p>
+                        <p class="fragment fade-in" style="font-size: 80%"><br>En résumé, lien faible consommation couvrant de grandes distances</p>
                     <aside class="notes">
                     Notes LoRa.<br>
                     - Distances mesurables (grandes)<br>
@@ -110,16 +129,34 @@
                     <section>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Choix du sujet</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail exploratoire</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
+                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
                     </section>
-                    <section data-transition="none">
-                        Conversion du temps en distance
+                    <section>
+                    <aside class="notes">
+                    Notes DToA.<br>
+                    - Différence DToA, ToF/ToA<br>
+                    - Distances mesurables (grandes)<br>
+                    </aside>
+                        Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
-                        <img src="images/schema_DToA_2d_0.png" height="500">
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les émetteurs n'ont pas besoin d'avoir d'horloges</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les récepteurs ont besoin d'être synchronisés</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
                     </section>
                     <section data-transition="none">
+<!--                        Conversion du temps en distance
+<hr>-->
+                        <div data-svg-fragment="images/schema_DToA_2d.svg#[*|label=slide0]">
+                          <a class="fragment" href="[*|label=slide1]"></a>
+                          <a class="fragment" href="[*|label=slide2]"></a>
+                          <a class="fragment" href="[*|label=slide3]"></a>
+                          <a class="fragment" href="[*|label=slide4]"></a>
+                          <a class="fragment" href="[*|label=slide5]"></a>
+                        </div>
+                    </section>
+                    <section data-transition="none">
+                         <div data-svg-fragment="images/schema_DToA_2d.svg"></div>
                         Conversion du temps en distance
                         <hr>
                         <img src="images/schema_DToA_2d_1.png" height="500">
@@ -134,49 +171,56 @@
                         <hr>
                         <img src="images/schema_DToA_2d_3.png" height="500">
                     </section>
-                    <section>
-                        Localisation par <em>Difference in Time of Arrival</em>
-                        <hr>
-                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
-                    </section>
                 </section>
 
                 <!-- Software defined radio -->
                 <section>
-                    <!-- Transciever Module LoRa-->
+                    <!-- Qu'est-ce que le SDR-->
+                    <section>
+                    <aside class="notes">
+                    Notes SDR.<br>
+                    - <br>
+                    - <br>
+                    </aside>
+                        Qu'est-ce que le Software Defined Radio (<em>SDR</em>) ?
+                        <hr>
+                        <img style="float: right" src="images/img_illustration_B200.png" height="200">
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Un système d'acquisition de signal RF</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Outils de prototypage</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail sur une plage de fréquences étendue (de 70MHz à 6GHz)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Bande passante de 50 Msamples par seconde</p>
+                    </section>
+                    <!-- Transciever vs Module LoRa-->
                     <section>
                         Le transciever LoRa de semtch vs. <em>SDR</em>
                         <hr>
-                        <img src="img_LoRa_semtech_1272.png" height="500">
+                        <img src="images/img_LoRa_semtech_1272.png" height="500">
                     </section>
-                    <!-- Transciever -->
+                    <!-- Transciever SDR -->
                     <section>
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="img_AD9364_schema.png" height="400">
+                        <img src="images/img_AD9364_schema.png" height="400">
                     </section>
                     <!-- Le SDR -->
-                    <section>
+                    <!-- <section>
                         L'intérêt du <em>SDR</em>
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Pour le prototypage</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>50 Mega samples par seconde</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail sur une plage de fréquences étendue (de 70MHz à 6GHz)</p>
-                    </section>
+                    </section> -->
                 </section>
 
                 <!-- L'architecture du système DToA -->
                 <section>
                     <section>
                         <p>L'architecture du système</p>
-                        <img src="illustration_B200.png" height="200">
                         <hr>
-                        <ul>
+                        <img style="float: center" src="images/schema_architecture.png" height="500">
+                        <!-- <ul>
                             <p class="fragment fade-in">Software Defined Radio - SDR</p>
                             <p class="fragment fade-in">permet l'aquisition/traitement d'un signal radio</p>
                             <p class="fragment fade-in">FPGA Xilinx Spartan 6</p>
                             <p class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
-                        </ul>
+                        </ul> -->
                     </section>
                 </section>
 
@@ -185,6 +229,7 @@
                     <section>
                         Le matériel utilisé
                         <hr>
+                        <img style="float: center" src="images/img_ensemble_cartes.png" height="550">
                     </section>
                 </section>
 
@@ -296,11 +341,15 @@
                     showSlideNumber: 'all',
                     overview: true,
                     center: true,
+                    history: true,
                     showNotes: false,
-                    // Transition style for full page slide backgrounds  // none/fade/slide/convex/concave/zoom
+                    //Transition style for full page slide backgrounds  // none/fade/slide/convex/concave/zoom
                     backgroundTransition: 'fade',
-                    // Number of slides away from the current that are visible
+                    //Number of slides away from the current that are visible
                     viewDistance: 3,
+                    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
 
              math: {
                  mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
@@ -314,7 +363,9 @@
 				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                 { src: 'plugin/math/math.js', async: true },
                 { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
-                { src: 'reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
+                { src: 'reveal-svg-fragment.js', 
+                    condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } 
+                },
                 // Zoom in and out with Alt+click
 	            { src: 'plugin/zoom-js/zoom.js', async: true },
                 // Speaker notes
