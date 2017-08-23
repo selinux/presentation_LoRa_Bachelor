@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 130.65082 79.736749"
+   height="79.736748mm"
+   width="130.65083mm">
+  <title
+     id="title949">schema DToA distances</title>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#345164;stroke-width:1pt;stroke-opacity:1;fill:#345164;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1040" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#345164;stroke-width:1pt;stroke-opacity:1;fill:#345164;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1037" />
+    </marker>
+    <filter
+       height="1.012"
+       y="-0.006"
+       width="1.012"
+       x="-0.006"
+       id="filter954"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur956"
+         stdDeviation="0.21782465" />
+    </filter>
+    <filter
+       height="1.0161043"
+       y="-0.0080521476"
+       width="1.0161043"
+       x="-0.0080521476"
+       id="filter958"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur960"
+         stdDeviation="0.29232604" />
+    </filter>
+    <filter
+       height="1.012"
+       y="-0.006"
+       width="1.012"
+       x="-0.006"
+       id="filter1770"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1772"
+         stdDeviation="0.21782465" />
+    </filter>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-0"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#345164;fill-opacity:1;fill-rule:evenodd;stroke:#345164;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1037-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-0"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#345164;fill-opacity:1;fill-rule:evenodd;stroke:#345164;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1040-9" />
+    </marker>
+    <clipPath
+       id="clipPath5053"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="56.761032"
+         x="-2.5023057"
+         height="79.913589"
+         width="130.96207"
+         id="rect5055"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5057"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="66.932785"
+         x="14.029867"
+         height="59.547039"
+         width="97.585442"
+         id="rect5059"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.1862857;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5061"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="56.761032"
+         x="-2.5023057"
+         height="79.913589"
+         width="130.96207"
+         id="rect5063"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5065"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="56.761032"
+         x="-2.5023057"
+         height="79.913589"
+         width="130.96207"
+         id="rect5067"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5069"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="66.932785"
+         x="14.029867"
+         height="59.547039"
+         width="97.585442"
+         id="rect5071"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.1862857;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5073"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="66.932785"
+         x="14.029867"
+         height="59.547039"
+         width="97.585442"
+         id="rect5075"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.1862857;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5077"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         clip-path="none"
+         y="56.761032"
+         x="-2.5023057"
+         height="79.913589"
+         width="130.96207"
+         id="rect5079"
+         style="opacity:1;vector-effect:none;fill:#686a41;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>schema DToA distances</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:date>septembre 2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sebastien Chassot</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:none"
+     transform="translate(2.5023058,-56.80424)"
+     id="layer1">
+    <g
+       style="display:none"
+       id="g1939">
+      <g
+         id="g4838">
+        <circle
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4820"
+           cx="18.974394"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4822"
+           cx="120.78617"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4824"
+           cx="62.366074"
+           cy="96.672615"
+           r="2.3623514" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="55.734749"
+           y="102.16988"
+           id="text4828"><tspan
+             id="tspan4826"
+             x="55.734749"
+             y="102.16988"
+             style="fill:#7f4141;fill-opacity:1;stroke-width:0.26458332px">LoRaMote</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="12.644502"
+           y="97.646317"
+           id="text4832"><tspan
+             id="tspan4830"
+             x="12.644502"
+             y="97.646317"
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px">R1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="123.87753"
+           y="97.663925"
+           id="text4836"><tspan
+             id="tspan4834"
+             x="123.87753"
+             y="97.663925"
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px">R2</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     id="layer5">
+    <g
+       style="display:inline"
+       id="g1927">
+      <circle
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:1.01534224;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter1770)"
+         id="path817-6"
+         cx="62.36607"
+         cy="96.672615"
+         r="43.56493"
+         transform="matrix(0.4924448,0,0,0.4924448,34.156534,-7.7375499)" />
+      <g
+         transform="translate(2.5023058,-56.80424)"
+         id="g4748">
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="18.974394"
+           id="path815-9"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="120.78617"
+           id="path815-9-6"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="62.366074"
+           id="path815"
+           style="opacity:1;vector-effect:none;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text968"
+           y="102.16988"
+           x="55.734749"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#7f4141;fill-opacity:1;stroke-width:0.26458332px"
+             y="102.16988"
+             x="55.734749"
+             id="tspan966">LoRaMote</tspan></text>
+        <text
+           id="text968-6"
+           y="97.646317"
+           x="12.644502"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.646317"
+             x="12.644502"
+             id="tspan966-0">R1</tspan></text>
+        <text
+           id="text968-6-4"
+           y="97.663925"
+           x="123.87753"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.663925"
+             x="123.87753"
+             id="tspan966-0-8">R2</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     style="display:none"
+     id="layer2">
+    <g
+       style="display:none"
+       id="g1914">
+      <g
+         transform="translate(2.5023058,-56.80424)"
+         id="g4768">
+        <circle
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4750"
+           cx="18.974394"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4752"
+           cx="120.78617"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4754"
+           cx="62.366074"
+           cy="96.672615"
+           r="2.3623514" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="55.734749"
+           y="102.16988"
+           id="text4758"><tspan
+             id="tspan4756"
+             x="55.734749"
+             y="102.16988"
+             style="fill:#7f4141;fill-opacity:1;stroke-width:0.26458332px">LoRaMote</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="12.644502"
+           y="97.646317"
+           id="text4762"><tspan
+             id="tspan4760"
+             x="12.644502"
+             y="97.646317"
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px">R1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="123.87753"
+           y="97.663925"
+           id="text4766"><tspan
+             id="tspan4764"
+             x="123.87753"
+             y="97.663925"
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px">R2</tspan></text>
+      </g>
+      <circle
+         transform="translate(2.5023058,-56.80424)"
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter958)"
+         id="path817"
+         cx="62.36607"
+         cy="96.672615"
+         r="43.56493"
+         clip-path="url(#clipPath5077)" />
+    </g>
+  </g>
+  <g
+     style="display:none"
+     id="layer3">
+    <g
+       id="g1901">
+      <g
+         transform="translate(2.5023058,-56.80424)"
+         id="g4798"
+         style="display:inline">
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="18.974394"
+           id="circle4780"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="120.78617"
+           id="circle4782"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="62.366074"
+           id="circle4784"
+           style="opacity:1;vector-effect:none;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text4788"
+           y="102.16988"
+           x="55.734749"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#7f4141;fill-opacity:1;stroke-width:0.26458332px"
+             y="102.16988"
+             x="55.734749"
+             id="tspan4786">LoRaMote</tspan></text>
+        <text
+           id="text4792"
+           y="97.646317"
+           x="12.644502"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.646317"
+             x="12.644502"
+             id="tspan4790">R1</tspan></text>
+        <text
+           id="text4796"
+           y="97.663925"
+           x="123.87753"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.663925"
+             x="123.87753"
+             id="tspan4794">R2</tspan></text>
+      </g>
+      <circle
+         transform="matrix(1.3420246,0,0,1.3420246,-18.828427,-89.868655)"
+         r="43.56493"
+         cy="96.672615"
+         cx="62.36607"
+         id="circle4942"
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.37257141;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter954)"
+         clip-path="url(#clipPath5073)" />
+    </g>
+  </g>
+  <g
+     style="display:none"
+     id="layer4">
+    <g
+       id="g1888">
+      <g
+         transform="translate(2.5023058,-56.80424)"
+         id="g4888"
+         style="display:inline">
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="18.974394"
+           id="circle4870"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="120.78617"
+           id="circle4872"
+           style="opacity:1;vector-effect:none;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <circle
+           r="2.3623514"
+           cy="96.672615"
+           cx="62.366074"
+           id="circle4874"
+           style="opacity:1;vector-effect:none;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text4878"
+           y="102.16988"
+           x="55.734749"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#7f4141;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#7f4141;fill-opacity:1;stroke-width:0.26458332px"
+             y="102.16988"
+             x="55.734749"
+             id="tspan4876">LoRaMote</tspan></text>
+        <text
+           id="text4882"
+           y="97.646317"
+           x="12.644502"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.646317"
+             x="12.644502"
+             id="tspan4880">R1</tspan></text>
+        <text
+           id="text4886"
+           y="97.663925"
+           x="123.87753"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#5c7f41;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#5c7f41;fill-opacity:1;stroke-width:0.26458332px"
+             y="97.663925"
+             x="123.87753"
+             id="tspan4884">R2</tspan></text>
+      </g>
+      <circle
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.37257141;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter954)"
+         id="path817-8"
+         cx="62.36607"
+         cy="96.672615"
+         r="43.56493"
+         transform="matrix(1.3420246,0,0,1.3420246,-18.828427,-89.868655)"
+         clip-path="url(#clipPath5069)" />
+      <circle
+         r="43.56493"
+         cy="96.672615"
+         cx="62.36607"
+         id="circle4945"
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter958)"
+         transform="translate(2.5023058,-56.80424)"
+         clip-path="url(#clipPath5065)" />
+    </g>
+  </g>
+  <g
+     style="display:none"
+     id="layer6">
+    <g
+       style="display:inline"
+       id="g1874">
+      <g
+         transform="translate(2.5023058,-56.80424)"
+         id="g4683"
+         style="display:inline"
+         clip-path="url(#clipPath5061)">
+        <path
+           id="path1035"
+           d="M 120.81243,85.599241 H 105.97686"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)" />
+        <path
+           id="path1681"
+           d="M 120.81243,83.795172 V 97.185554"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           id="path1681-8"
+           d="M 106.01774,83.795173 V 97.185555"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <text
+           id="text968-6-4-8"
+           y="84.396461"
+           x="111.98138"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#345164;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#345164;fill-opacity:1;stroke-width:0.26458332px"
+             y="84.396461"
+             x="111.98138"
+             id="tspan966-0-8-9">dt</tspan></text>
+        <path
+           id="path1681-8-4"
+           d="M 18.792261,96.717036 V 124.94298"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           id="path1681-8-4-3"
+           d="M 120.83992,96.717037 V 124.94298"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           id="path1035-2"
+           d="M 120.81243,123.69926 H 18.846994"
+           style="fill:none;fill-rule:evenodd;stroke:#345164;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-0);marker-end:url(#Arrow1Lend-0)" />
+        <text
+           id="text968-6-4-8-5"
+           y="122.49644"
+           x="58.820984"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#345164;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="fill:#345164;fill-opacity:1;stroke-width:0.26458332px"
+             y="122.49644"
+             x="58.820984"
+             id="tspan966-0-8-9-4">distance connue</tspan></text>
+      </g>
+      <g
+         style="display:inline"
+         id="g4981"
+         transform="translate(2.5023058,-56.80424)">
+        <circle
+           style="opacity:1;vector-effect:none;fill:#d51717;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4963"
+           cx="18.974394"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#d51717;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4965"
+           cx="120.78617"
+           cy="96.672615"
+           r="2.3623514" />
+        <circle
+           style="opacity:1;vector-effect:none;fill:#3b79d9;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="circle4967"
+           cx="62.366074"
+           cy="96.672615"
+           r="2.3623514" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131209px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3b79d9;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="55.734749"
+           y="102.16988"
+           id="text4971"><tspan
+             id="tspan4969"
+             x="55.734749"
+             y="102.16988"
+             style="fill:#3b79d9;fill-opacity:1;stroke-width:0.26458332px">LoRaMote</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d51717;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="12.644502"
+           y="97.646317"
+           id="text4975"><tspan
+             id="tspan4973"
+             x="12.644502"
+             y="97.646317"
+             style="fill:#d51717;fill-opacity:1;stroke-width:0.26458332px">R1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:2.67131233px;line-height:1.66957009px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d51717;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="123.87753"
+           y="97.663925"
+           id="text4979"><tspan
+             id="tspan4977"
+             x="123.87753"
+             y="97.663925"
+             style="fill:#d51717;fill-opacity:1;stroke-width:0.26458332px">R2</tspan></text>
+      </g>
+      <circle
+         transform="matrix(1.3420246,0,0,1.3420246,-18.828427,-89.868655)"
+         r="43.56493"
+         cy="96.672615"
+         cx="62.36607"
+         id="circle4983"
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.37257141;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter954)"
+         clip-path="url(#clipPath5057)" />
+      <circle
+         transform="translate(2.5023058,-56.80424)"
+         style="display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#acacac;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter958)"
+         id="circle4985"
+         cx="62.36607"
+         cy="96.672615"
+         r="43.56493"
+         clip-path="url(#clipPath5053)" />
+    </g>
+  </g>
+</svg>

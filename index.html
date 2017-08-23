@@ -125,51 +125,47 @@
                     </aside>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les émetteurs n'ont pas besoin d'avoir d'horloges</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les récepteurs ont besoin d'être synchronisés</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
-                    </section>
-                    <!-- <section data-transition="none">
-                        Conversion du temps en distance
-                        <hr>
-                        <div data-svg-fragment="images/schema_DToA_2d.svg#[*|label=slide0]">
-                          <a class="fragment" href="[*|label=slide1]"></a>
-                          <a class="fragment" href="[*|label=slide2]"></a>
-                          <a class="fragment" href="[*|label=slide3]"></a>
-                          <a class="fragment" href="[*|label=slide4]"></a>
-                          <a class="fragment" href="[*|label=slide5]"></a>
-                        </div>
-                    </section> -->
-                    <section data-transition="none">
-                        Conversion du temps en distance
-                        <hr>
-                        <img src="images/schema_DToA_2d_0.png" height="500">
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Time of Flight (ToF), Time of Arrival (ToA) vs. DToA</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>GPS : Les satellites émettent un signal synchrone</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>GPS : Le récepteur régénère l'horloge et calcule sa position</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : L'émetteur est passif</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Les récepteurs doivent être synchronisés et calculent</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
                     </section>
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
-                        <img src="images/schema_DToA_2d_1.png" height="500">
+                        <img src="images/schema_DToA_2d_0.svg" height="500">
                     </section>
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
-                        <img src="images/schema_DToA_2d_2.png" height="500">
+                        <img src="images/schema_DToA_2d_1.svg" height="500">
                     </section>
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
-                        <img src="images/schema_DToA_2d_3.png" height="500">
+                        <img src="images/schema_DToA_2d_2.svg" height="500">
                     </section>
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
-                        <img src="images/schema_DToA_2d_4.png" height="500">
+                        <img src="images/schema_DToA_2d_3.svg" height="500">
                     </section>
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
-                        <img src="images/schema_DToA_2d_5.png" height="500">
+                        <img src="images/schema_DToA_2d_4.svg" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_5.svg" height="500">
+                    </section>
+                    <section data-transition="none">
+                        Conversion du temps en distance
+                        <hr>
+                        <img src="images/schema_DToA_2d_6.svg" height="500">
                     </section>
                     <!-- Notion de temps -->
                     <section data-transition="none">
@@ -196,25 +192,36 @@
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Un système d'acquisition de signal RF</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Outils de prototypage</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Travail sur une plage de fréquences étendue (de 70MHz à 6GHz)</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Bande passante de 50 Msamples par seconde</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>résolution de 50 Msamples/s</p>
                     </section>
                     <!-- Transciever vs Module LoRa-->
                     <section>
-                        Le transciever LoRa de semtch vs. <em>SDR</em>
+                        Le transciever LoRa de Semtech vs. <em>SDR</em>
                         <hr>
                         <img src="images/img_LoRa_semtech_1272.png" height="500">
                     </section>
                     <!-- Transciever SDR -->
-                    <section>
+                    <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="images/img_AD9364_schema.png" height="400">
+                        <img src="images/AD9364_schema_0.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Software Defined Radio <em>SDR</em>
+                        <hr>
+                        <img src="images/AD9364_schema_1.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Software Defined Radio <em>SDR</em>
+                        <hr>
+                        <img src="images/AD9364_schema_2.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Software Defined Radio <em>SDR</em>
+                        <hr>
+                        <img src="images/AD9364_schema_3.svg" height="400">
                     </section>
                     <!-- Le SDR -->
-                    <!-- <section>
-                        L'intérêt du <em>SDR</em>
-                        <hr>
-                    </section> -->
                 </section>
 
                 <!-- L'architecture du système DToA -->
@@ -248,6 +255,79 @@
                         <hr>
                         <img style="float: center" src="images/img_counter_basys3.png" height="550">
                     </section>
+                    <!-- La synchroniastion des compteurs -->
+                    <section data-transition="none">
+                        Dérive des compteurs
+                        <hr>
+                        <img src="images/counter1.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des compteurs
+                        <hr>
+                        <img src="images/counter2.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des compteurs
+                        <hr>
+                        <img src="images/counter3.png" height="400">
+                    </section>
+                    <!-- La synchroniastion des GPS (PPS) -->
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy0.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy1.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy2.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy3.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy4.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy5.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des GPS
+                        <hr>
+                        <img src="images/LeCroy6.png" height="400">
+                    </section>
+                    <!-- La synchroniastion des GPS (PPS) -->
+                    <section data-transition="none">
+                        Dérive des compteurs avec synchronisation par GPS
+                        <hr>
+                        <img src="images/counter4.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des compteurs avec synchronisation par GPS
+                        <hr>
+                        <img src="images/counter5.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des compteurs avec synchronisation par GPS
+                        <hr>
+                        <img src="images/counter6.png" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Dérive des compteurs avec synchronisation par GPS
+                        <hr>
+                        <img src="images/counter7.png" height="400">
+                    </section>
                 </section>
 
                 <!-- Les modifications au niveau du FPGA -->
@@ -263,6 +343,54 @@
                     <section>
                      La modulation LoRa
                         <hr>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Modulation par étalement de spectre (Spread Spectrum)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Utilisation d'un chirp (technologie radars/sonars)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Composition d'une modulation de fréquence (FSK) et d'un chirp</p>
+                    </section>
+                    <section data-transition="none">
+                        Le chirp
+                        <hr>
+                        <img src="images/chirp_symbol_0.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        La modulation
+                        <hr>
+                        <img src="images/chirp_symbol_1.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        La modulation
+                        <hr>
+                        <img src="images/chirp_symbol_2.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        La résistance au bruit
+                        <hr>
+                        <img src="images/chirp_symbol_3.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Modulation par mixing FSK et up-chirp
+                        <hr>
+                        <img src="images/chirp_symbol_mixing_0.svg" height="300">
+                    </section>
+                    <section data-transition="none">
+                        Demodulation par mixing LoRa et down-chirp
+                        <hr>
+                        <img src="images/chirp_symbol_mixing_1.svg" height="300">
+                    </section>
+                    <section data-transition="none">
+                        Demodulation par mixing LoRa et down-chirp
+                        <hr>
+                        <img src="images/chirp_symbol_mixing_2.svg" height="300">
+                    </section>
+                    <section data-transition="none">
+                        Exemple de transmission
+                        <hr>
+                        <img src="images/sample_msg_0.svg" height="300">
+                    </section>
+                    <section data-transition="none">
+                        Exemple de transmission
+                        <hr>
+                        <img src="images/sample_msg_1.svg" height="300">
                     </section>
                 </section>
 
@@ -375,7 +503,7 @@
                 { src: 'plugin/math/math.js', async: true },
                 { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
                 { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-<!--                { src: 'plugin/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }, -->
+                { src: 'plugin/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
                 // Zoom in and out with Alt+click
 	            { src: 'plugin/zoom-js/zoom.js', async: true },
                 // Speaker notes
