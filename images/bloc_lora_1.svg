@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="230.22902mm"
-   height="141.13196mm"
-   viewBox="0 0 230.22902 141.13195"
+   width="237.06807mm"
+   height="152.6109mm"
+   viewBox="0 0 237.06807 152.61089"
    version="1.1"
    id="svg6918"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="bloc_lora_1.svg"
    inkscape:export-filename="/home/seba/documents/hepia/lora/rapport/schema/bloc_lora_1.png"
    inkscape:export-xdpi="96"
@@ -29,15 +29,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="505.52017"
-     inkscape:cy="99.677577"
+     inkscape:cx="146.37997"
+     inkscape:cy="113.79041"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     fit-margin-top="2"
-     fit-margin-left="2"
-     fit-margin-right="2"
-     fit-margin-bottom="2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1200"
      inkscape:window-x="0"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +60,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(20.640848,-115.61906)">
+     transform="translate(25.782026,-107.87414)">
+    <rect
+       y="107.87414"
+       x="-25.782026"
+       height="152.6109"
+       width="237.06807"
+       id="rect1203"
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.98689958;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
        style="opacity:1;vector-effect:none;fill:#9fcafb;fill-opacity:1;fill-rule:evenodd;stroke:#919faf;stroke-width:1.92702889;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4491-1-9"
@@ -411,7 +418,7 @@
          style="fill:#576677;fill-opacity:1;stroke:#000000;stroke-width:0.10841498px;stroke-opacity:0.26666667">64</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#91a0af;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2"
-       d="m 130.2441,200.68554 0.0312,-20.7085 H 76.857288 l 0,-7.04923"
+       d="m 130.2441,200.68554 0.0312,-20.7085 H 76.857288 v -7.04923"
        id="path8020"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
@@ -426,7 +433,7 @@
          height="31.142937"
          width="31.944742"
          id="rect7820-9"
-         style="opacity:1;vector-effect:none;fill:#5eaafc;fill-opacity:0.98039216;fill-rule:evenodd;stroke:#919faf;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.93725491" />
+         style="opacity:1;vector-effect:none;fill:#5eaafc;fill-opacity:0.98039216;fill-rule:evenodd;stroke:#919faf;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.9372549" />
       <text
          id="text7824-3"
          y="136.60837"

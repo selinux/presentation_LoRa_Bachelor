@@ -11,7 +11,7 @@
 		    <title>Localisation de LoRa par DToA</title>
 
 		    <link rel="stylesheet" href="css/reveal.css">
-		    <link rel="stylesheet" href="css/theme/solarized.css"> 
+		    <link rel="stylesheet" href="css/theme/moon.css"> 
             <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
 		    <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
@@ -55,7 +55,7 @@
                 </section>
 
                 <!-- Table of content -->
-                <section>
+                <!--<section>
                    <p style="font-size: 100%">Table des matières</p>
                    <hr>
                    <p style="font-size: 50%" align=left>Introduction</p>
@@ -70,15 +70,16 @@
                    <p style="font-size: 50%" align=left>Les algorithmes de détection</p>
                    <p style="font-size: 50%" align=left>Les résultats</p>
                    <p style="font-size: 50%" align=left>Perspectives et conclusions</p>
-                </section>
+                </section> -->
 
                 <!-- Introduction -->
                 <section>
                     <p style="font-size: 100%">Introduction</p>
                     <hr>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Choix du sujet</p>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Principes de la localisation</p>
                     <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Travail exploratoire</p>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Démarche de ce projet</p>
+                    <p class="fragment fade-in" style="font-size: 80%" align=left>Résultats et perspective</p>
                     <aside class="notes">
                     Notes Introduction.<br>
                     - Choix FPGA, traitement signal, temps réel<br>
@@ -173,7 +174,8 @@
                         <hr>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>50 MHz == à un période de 20 ns soit 4 mètres</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~4 mètres)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Le <em>temps en vol</em> d'un message de 32 symboles peut atteindre 1.6 [s] </p>
                     </section>
                 </section>
 
@@ -237,10 +239,7 @@
                             <p class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
                         </ul> -->
                     </section>
-                </section>
-
-                <!-- Le matériel utilisé -->
-                <section>
+                    <!-- Le matériel utilisé -->
                     <section>
                         Le matériel utilisé
                         <hr>
@@ -248,12 +247,47 @@
                     </section>
                 </section>
 
+                <!-- Les modifications au niveau du FPGA -->
+                <section>
+                    <section>
+                        Les modifications au niveau du FPGA
+                        <hr>
+                        <img src="images/illustration_USRP_B200.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Architecture de la carte USRP B200 (SDR)
+                        <hr>
+                        <img src="images/vue_d_ensemble_intern_0.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Architecture de la carte USRP B200 (SDR)
+                        <hr>
+                        <img src="images/vue_d_ensemble_intern_1.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Architecture de la carte USRP B200 (SDR)
+                        <hr>
+                        <img src="images/vue_d_ensemble_intern_2.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Implémentation idéale du bloc VHDL
+                        <hr>
+                        <img src="images/bloc_lora_0.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Implémentation finale du bloc VHDL
+                        <hr>
+                        <img src="images/bloc_lora_1.svg" height="400">
+                    </section>
+                </section>
+
+
                 <!-- La synchroniastion des récepteurs -->
                 <section>
                     <section>
                         La synchronisation des récepteurs
                         <hr>
-                        <img style="float: center" src="images/img_counter_basys3.png" height="550">
+                        <img style="float: center" src="images/img_counter_basys3.svg" height="550">
                     </section>
                     <!-- La synchroniastion des compteurs -->
                     <section data-transition="none">
@@ -273,37 +307,37 @@
                     </section>
                     <!-- La synchroniastion des GPS (PPS) -->
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy0.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy1.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy2.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy3.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy4.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy5.png" height="400">
                     </section>
                     <section data-transition="none">
-                        Dérive des GPS
+                        Jitter des GPS
                         <hr>
                         <img src="images/LeCroy6.png" height="400">
                     </section>
@@ -327,39 +361,6 @@
                         Dérive des compteurs avec synchronisation par GPS
                         <hr>
                         <img src="images/counter7.png" height="400">
-                    </section>
-                </section>
-
-                <!-- Les modifications au niveau du FPGA -->
-                <section>
-                    <section>
-                        Les modifications au niveau du FPGA
-                        <hr>
-                    </section>
-                    <section data-transition="none">
-                        Architecture de la carte USRP B200 (SDR)
-                        <hr>
-                        <img src="images/vue_d_ensemble_intern_0.svg" height="400">
-                    </section>
-                    <section data-transition="none">
-                        Architecture de la carte USRP B200 (SDR)
-                        <hr>
-                        <img src="images/vue_d_ensemble_intern_1.svg" height="400">
-                    </section>
-                    <section data-transition="none">
-                        Architecture de la carte USRP B200 (SDR)
-                        <hr>
-                        <img src="images/vue_d_ensemble_intern_2.svg" height="400">
-                    </section>
-                    <section data-transition="none">
-                        Dérive des compteurs avec synchronisation par GPS
-                        <hr>
-                        <img src="images/bloc_lora_0.svg" height="400">
-                    </section>
-                    <section data-transition="none">
-                        Dérive des compteurs avec synchronisation par GPS
-                        <hr>
-                        <img src="images/bloc_lora_1.svg" height="400">
                     </section>
                 </section>
 
@@ -425,6 +426,11 @@
                         Les algorithmes de détection
                         <hr>
                     </section>
+                    <section data-transition="none">
+                        Algorithme basé sur l'amplitude
+                        <hr>
+                        <img src="images/algo_amplitude.svg" height="400">
+                    </section>
                 </section>
 
                 <!-- Les résultats -->
@@ -440,31 +446,13 @@
                     <section>
                         Perspectives et conclusions 
                         <hr>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>La synchronisation des récepteurs est satisfaisante (±40 ns &#8660; ±10m)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'utilisation de Oven Controlled Oscillator (OCXO) et de GPS de bonne qualité améliorerait encore la précision</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Il reste à trouver un algoritme plus robuste</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'architecture transceiver, FPGA et CPU (ethernet) est validée</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'extension à plus de récepteurs pour trialtération ne devrait pas poser de problèmes</p>
                     </section>
                 </section>
-
-                <!-- Slide 3 -->
-                <!--
-		        <section>
-                    <section>
-                        <p>Vue d'ensemble USRP B200</p>
-                        <img src="vue_d_ensemble.png" height="300">
-                        <ul>
-                            <p style="font-size: 80%" class="fragment fade-in">multitude de bus (wishbone, AXI-stream, GPIF,...)</p>
-                            <p style="font-size: 80%" class="fragment fade-in">flux de contrôle, radio RX/TX et UART entrelacés</p>
-                        </ul>
-                    </section>
-                    <section>
-                        Implémentation
-                        <img src="block_lora_detect_RTL.png" height="300">
-                        <ul>
-                            <p style="font-size: 90%" class="fragment highlight-red">compteur interne synchronisé</p>
-                            <p style="font-size: 90%" class="fragment highlight-blue">trigger par detection ou manuelle</p>
-                            <p style="font-size: 90%">relecture via le protocole de la carte</p>
-                        </ul>
-                    </section>
-                </section>
-                -->
 
                 <!-- End slides -->
                 <section>
@@ -472,14 +460,13 @@
                         <h1>Questions ?</h1>
                         <p>liens</p>
                         <ul>
-                            <p style="font-size: 70%"><a href="https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy">https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy</a> (vidéo)</p>
-                            <p style="font-size: 70%"><a href="https://github.com/selinux/uhd">https://github.com/selinux/uhd</a> (code du projet)</p>
-                            <p style="font-size: 70%"><a href="https://github.com/selinux/fpga">https://github.com/selinux/fpga</a> (code de la partie FPGA)</p>
-                            <p style="font-size: 70%"><a href="http://files.ettus.com/manual/index.html">http://files.ettus.com/manual/index.html</a> (doc)</p>
-                            <p style="font-size: 70%"><a href="https://en.wikipedia.org/wiki/Software-defined_radio">https://en.wikipedia.org/wiki/Software-defined_radio</a></p>
+                            <p style="font-size: 60%"><a href="https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy">https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy</a> (vidéo)</p>
+                            <p style="font-size: 60%"><a href="https://github.com/selinux/fpga">https://github.com/selinux/LoRa_DToA_host</a> (code des scripts et utilitaires)</p>
+                            <p style="font-size: 60%"><a href="https://github.com/selinux/uhd">https://github.com/selinux/uhd</a> (code du projet)</p>
+                            <p style="font-size: 60%"><a href="https://github.com/selinux/fpga">https://github.com/selinux/fpga</a> (code de la partie FPGA)</p>
+                            <p style="font-size: 60%"><a href="http://files.ettus.com/manual/index.html">http://files.ettus.com/manual/index.html</a> (doc USRP B200)</p>
                         </ul>
                     <br>
-                    <p style="font-size: 30%">follow presentation on...<a href="https://selinux.github.io/localisation_lora_presentation">https://selinux.github.io/localisation_lora_presentation</a></p>
                     </section>
                 </section>
 			      </div>

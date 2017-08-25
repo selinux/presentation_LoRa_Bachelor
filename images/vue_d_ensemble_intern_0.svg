@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="286.24017mm"
-   height="152.67616mm"
-   viewBox="0 0 286.24017 152.67616"
+   width="286.24564mm"
+   height="153.67998mm"
+   viewBox="0 0 286.24563 153.67997"
    version="1.1"
    id="svg4842"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="vue_d_ensemble_inter_0.svg"
+   sodipodi:docname="vue_d_ensemble_intern_0.svg"
    inkscape:export-filename="/home/seba/documents/hepia/lora/rapport/schema/vue_d_ensemble_intern.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -89,21 +89,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994952"
-     inkscape:cx="729.16855"
-     inkscape:cy="254.26894"
+     inkscape:zoom="0.70000002"
+     inkscape:cx="628.64414"
+     inkscape:cy="345.04746"
      inkscape:document-units="mm"
-     inkscape:current-layer="g3288"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1200"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     fit-margin-top="7"
-     fit-margin-left="5"
-     fit-margin-right="5"
-     fit-margin-bottom="7" />
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata4839">
     <rdf:RDF>
@@ -120,7 +120,7 @@
      inkscape:label="slide0"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(36.268476,-25.572732)"
+     transform="translate(36.268475,-25.370729)"
      style="display:inline">
     <flowRoot
        xml:space="preserve"
@@ -181,6 +181,13 @@
            x="716.19818"
            y="59.334133" /></flowRegion><flowPara
          id="flowPara6297" /></flowRoot>    <rect
+       style="display:inline;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.98689958;fill-rule:evenodd;stroke:none;stroke-width:0.26433337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4800"
+       width="286.24564"
+       height="153.67998"
+       x="-36.268475"
+       y="25.370729" />
+    <rect
        style="opacity:1;vector-effect:none;fill:#e4fff8;fill-opacity:1;stroke:#000000;stroke-width:1.29999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.26666667"
        id="rect7204"
        width="219.74763"
@@ -895,7 +902,7 @@
     </g>
   </g>
   <g
-     transform="translate(36.268476,-25.572732)"
+     transform="translate(36.268475,-25.370729)"
      id="g2692"
      inkscape:groupmode="layer"
      inkscape:label="slide1"
@@ -959,6 +966,13 @@
            width="102.53048"
            id="rect2130" /></flowRegion><flowPara
          id="flowPara2134" /></flowRoot>    <rect
+       y="25.370729"
+       x="-36.268475"
+       height="153.67998"
+       width="286.24564"
+       id="rect4794"
+       style="display:inline;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.98689958;fill-rule:evenodd;stroke:none;stroke-width:0.26433337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
        rx="9"
        y="32.781498"
        x="11.819"
@@ -1930,7 +1944,8 @@
       </g>
     </g>
     <g
-       id="g2690">
+       id="g2690"
+       style="display:inline">
       <rect
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.34999999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect2662"
@@ -2011,7 +2026,7 @@
      inkscape:label="slide2"
      inkscape:groupmode="layer"
      id="g3288"
-     transform="translate(36.268476,-25.572732)"
+     transform="translate(36.268475,-25.370729)"
      style="display:none">
     <flowRoot
        xml:space="preserve"
@@ -2072,6 +2087,13 @@
            x="716.19818"
            y="59.334133" /></flowRegion><flowPara
          id="flowPara2730" /></flowRoot>    <rect
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:0.98689958;fill-rule:evenodd;stroke:none;stroke-width:0.26433337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4768"
+       width="286.24564"
+       height="153.67998"
+       x="-36.268475"
+       y="25.370729" />
+    <rect
        style="opacity:1;vector-effect:none;fill:#e4fff8;fill-opacity:1;stroke:#000000;stroke-width:1.29999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.26666667"
        id="rect2734"
        width="219.74763"
