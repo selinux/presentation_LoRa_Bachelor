@@ -289,14 +289,41 @@
                         <hr>
                         <img style="float: center" src="images/img_ensemble_cartes.png" height="550">
                     </section>
+                    <!-- La synchroniastion des récepteurs -->
+                    <section>
+                        La synchronisation des récepteurs
+                        <hr>
+                        <img style="float: center" src="images/img_counter_basys3.svg" height="550">
+                    </section>
                 </section>
+
 
                 <!-- Les modifications au niveau du FPGA -->
                 <section>
-                    <section>
-                        Les modifications au niveau du FPGA
+                    <section data-transition="none">
+                        Les modifications au niveau du FPGA du SDR
                         <hr>
-                        <img src="images/illustration_USRP_B200.svg" height="400">
+                        <img src="images/illustration_USRP_B200_dyn_0.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Les modifications au niveau du FPGA du SDR
+                        <hr>
+                        <img src="images/illustration_USRP_B200_dyn_1.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Les modifications au niveau du FPGA du SDR
+                        <hr>
+                        <img src="images/illustration_USRP_B200_dyn_2.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Les modifications au niveau du FPGA du SDR
+                        <hr>
+                        <img src="images/illustration_USRP_B200_dyn_3.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        Les modifications au niveau du FPGA du SDR
+                        <hr>
+                        <img src="images/illustration_USRP_B200_dyn_4.svg" height="400">
                     </section>
                     <section data-transition="none">
                         Architecture de la carte USRP B200 (SDR)
@@ -308,32 +335,18 @@
                         <hr>
                         <img src="images/vue_d_ensemble_intern_1.svg" height="400">
                     </section>
-                    <section data-transition="none">
-                        Architecture de la carte USRP B200 (SDR)
-                        <hr>
-                        <img src="images/vue_d_ensemble_intern_2.svg" height="400">
-                    </section>
-                    <section data-transition="none">
+                    <!--<section data-transition="none">
                         Implémentation idéale du bloc VHDL
                         <hr>
-                        <img src="images/bloc_lora_0.svg" height="400">
+                        <img src="images/bloc_lora_1.svg" height="400">
                     </section>
                     <section data-transition="none">
                         Implémentation finale du bloc VHDL
                         <hr>
                         <img src="images/bloc_lora_1.svg" height="400">
-                    </section>
+                    </section>-->-->
                 </section>
 
-
-                <!-- La synchroniastion des récepteurs -->
-                <section>
-                    <section>
-                        La synchronisation des récepteurs
-                        <hr>
-                        <img style="float: center" src="images/img_counter_basys3.svg" height="550">
-                    </section>
-                </section>
 
                 <!-- La modulation LoRa -->
                 <section>
@@ -429,7 +442,7 @@
                     <section>
                         Les résultats
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les sources d'erreurs ont été identifiées</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les sources d'imprécisions ont été identifiées</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Des solutions techniques existent pour les limiter</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
                     </section>
@@ -493,7 +506,7 @@
                         Dérive des compteurs
                         <hr>
                         <img src="images/counter3.png" height="400">
-                        <p style="font-size: 80%" align=center>Les compteurs se resynchronisent quand ils recouvre le signal PPS</p>
+                        <p style="font-size: 80%" align=center>Les compteurs se resynchronisent quand ils recouvrent le signal PPS</p>
                     </section>
                     <!-- La synchroniastion des GPS (PPS) -->
                     <section data-transition="none">
@@ -509,7 +522,7 @@
                         <p style="font-size: 80%" align=center>Le jitter du GPS s'ajoute à la dérive du compteur</p>
                     </section>
                     <section data-transition="none">
-                        Synchronisation par emulateur (compensé)
+                        Synchronisation par émulateur (compensé)
                         <hr>
                         <img src="images/counter6.png" height="400">
                         <p style="font-size: 80%" align=center>Equart maximum de &plusmn; 20 ns (~5m)</p>

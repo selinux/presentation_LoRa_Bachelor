@@ -98,12 +98,12 @@
      inkscape:cx="422.03591"
      inkscape:cy="264.30783"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g10318-5"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1200"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="636"
+     inkscape:window-height="1161"
+     inkscape:window-x="640"
+     inkscape:window-y="18"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -117,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -243,7 +243,7 @@
            style="stroke-width:0.48874179px"
            y="188.2448"
            x="625.93866"
-           sodipodi:role="line">fréquences</tspan></text>
+           sodipodi:role="line">frequences</tspan></text>
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
