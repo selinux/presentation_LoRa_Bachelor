@@ -103,10 +103,9 @@
                         <p class="fragment fade-in" style="font-size: 80%"><br>En résumé, lien faible consommation couvrant de grandes distances</p>
                     <aside class="notes">
                     Notes LoRa.<br>
-                    - Distances mesurables (grandes)<br>
+                    - Gds distances donc mesurables<br>
                     - Lien principalement ascendant<br>
-                    - État de veille<br>
-                    - <br>
+                    - Faible consommation veille<br>
                     </aside>
                     </section>
 
@@ -114,17 +113,14 @@
 
                 <!-- Le principe du DToA -->
                 <section>
+                    <!-- Video illustration -->
                     <section>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
                         <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&autoplay=1&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
                     </section>
+                    <!-- DToA vs ToF -->
                     <section>
-                    <aside class="notes">
-                    Notes DToA.<br>
-                    - Différence DToA, ToF/ToA<br>
-                    - Distances mesurables (grandes)<br>
-                    </aside>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
@@ -133,7 +129,13 @@
                         <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : L'émetteur est passif</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Les récepteurs doivent être synchronisés et calculent</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
+                    <aside class="notes">
+                    Notes DToA.<br>
+                    - Différence GPS vs DToA<br>
+                    - Émetteur passif donc économie d'énérgie cohérent avec LoRa<br>
+                    </aside>
                     </section>
+                    <!-- Conversion temps distances -->
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
@@ -154,11 +156,6 @@
                         <hr>
                         <img src="images/schema_DToA_2d_3.svg" height="500">
                     </section>
-                    <!-- <section data-transition="none">
-                        Conversion du temps en distance
-                        <hr>
-                        <img src="images/schema_DToA_2d_4.svg" height="500">
-                    </section> -->
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
@@ -185,18 +182,18 @@
                 <section>
                     <!-- Qu'est-ce que le SDR-->
                     <section>
-                    <aside class="notes">
-                    Notes SDR.<br>
-                    - <br>
-                    - <br>
-                    </aside>
                         Qu'est-ce que le Software Defined Radio (<em>SDR</em>) ?
                         <hr>
                         <img style="float: right" src="images/img_illustration_B200.png" height="200">
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Un système d'acquisition de signal RF</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travail sur une plage de fréquences étendue (de 70MHz à 6GHz)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travaille sur une plage de fréquences étendues (de 70MHz à 6GHz)</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>résolution de 50 Msamples/s</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Outils de prototypage</p>
+                    <aside class="notes">
+                    Notes SDR.<br>
+                    - Outils de prototypage<br>
+                    <br>
+                    </aside>
                     </section>
                     <!-- Transciever vs Module LoRa-->
                     <section data-transition="none">
@@ -204,12 +201,20 @@
                         <hr>
                         <img src="images/img_LoRa_semtech_1272_0.svg" height="320">
                         <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
+                    <aside class="notes">
+                    Notes Modem LoRa vs SDR.<br>
+                    - Ce composant à une fonction spécifique<br>
+                    </aside>
                     </section>
                     <section data-transition="none">
                         Le transciever LoRa de Semtech vs. <em>SDR</em>
                         <hr>
                         <img src="images/img_LoRa_semtech_1272_1.svg" height="320">
                         <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
+                    <aside class="notes">
+                    Notes Modem LoRa vs SDR.<br>
+                    - Ce composant à une fonction spécifique<br>
+                    </aside>
                     </section>
                     <!-- Transciever SDR -->
                     <section data-transition="none">
@@ -217,30 +222,50 @@
                         <hr>
                         <img src="images/AD9364_schema_0.svg" height="350">
                         <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
                         <img src="images/AD9364_schema_1.svg" height="350">
                         <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
                         <img src="images/AD9364_schema_2.svg" height="350">
                         <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
                         <img src="images/AD9364_schema_3.svg" height="350">
                         <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
                         <img src="images/AD9364_schema_4.svg" height="350">
                         <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
                     </section>
                     <!-- Le SDR -->
                 </section>
