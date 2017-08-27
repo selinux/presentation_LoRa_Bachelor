@@ -11,8 +11,9 @@
 		    <title>Localisation de LoRa par DToA</title>
 
 		    <link rel="stylesheet" href="css/reveal.css">
-		    <link rel="stylesheet" href="css/theme/moon.css"> 
+		    <link rel="stylesheet" href="css/theme/serif.css"> 
             <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
+            <!-- <link rel="stylesheet" href="css/theme/serif.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
 		    <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
 		    <!-- <link rel="stylesheet" href="css/theme/league.css"> -->
@@ -116,7 +117,7 @@
                     <section>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
-                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&autoplay=1&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
                     </section>
                     <section>
                     <aside class="notes">
@@ -153,11 +154,11 @@
                         <hr>
                         <img src="images/schema_DToA_2d_3.svg" height="500">
                     </section>
-                    <section data-transition="none">
+                    <!-- <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
                         <img src="images/schema_DToA_2d_4.svg" height="500">
-                    </section>
+                    </section> -->
                     <section data-transition="none">
                         Conversion du temps en distance
                         <hr>
@@ -175,6 +176,7 @@
                         <p class="fragment fade-in" style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~4 mètres)</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une dérive d'une s/an équivaut à une dérive de 31 ns s<sup>-1</sup></p>
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Le <em>temps en vol</em> d'un message de 32 symboles peut atteindre 1.6 [s] </p>
                     </section>
                 </section>
@@ -197,31 +199,48 @@
                         <p class="fragment fade-in" style="font-size: 80%" align=left>Outils de prototypage</p>
                     </section>
                     <!-- Transciever vs Module LoRa-->
-                    <section>
+                    <section data-transition="none">
                         Le transciever LoRa de Semtech vs. <em>SDR</em>
                         <hr>
-                        <img src="images/img_LoRa_semtech_1272.png" height="500">
+                        <img src="images/img_LoRa_semtech_1272_0.svg" height="320">
+                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
+                    </section>
+                    <section data-transition="none">
+                        Le transciever LoRa de Semtech vs. <em>SDR</em>
+                        <hr>
+                        <img src="images/img_LoRa_semtech_1272_1.svg" height="320">
+                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
                     </section>
                     <!-- Transciever SDR -->
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="images/AD9364_schema_0.svg" height="400">
+                        <img src="images/AD9364_schema_0.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="images/AD9364_schema_1.svg" height="400">
+                        <img src="images/AD9364_schema_1.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="images/AD9364_schema_2.svg" height="400">
+                        <img src="images/AD9364_schema_2.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
                     </section>
                     <section data-transition="none">
                         Software Defined Radio <em>SDR</em>
                         <hr>
-                        <img src="images/AD9364_schema_3.svg" height="400">
+                        <img src="images/AD9364_schema_3.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    </section>
+                    <section data-transition="none">
+                        Software Defined Radio <em>SDR</em>
+                        <hr>
+                        <img src="images/AD9364_schema_4.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
                     </section>
                     <!-- Le SDR -->
                 </section>
