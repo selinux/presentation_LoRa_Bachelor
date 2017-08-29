@@ -11,7 +11,7 @@
 		    <title>Localisation de LoRa par DToA</title>
 
 		    <link rel="stylesheet" href="css/reveal.css">
-		    <link rel="stylesheet" href="css/theme/serif.css"> 
+		    <link rel="stylesheet" href="css/theme/solarized.css"> 
             <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/serif.css"> -->
             <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
@@ -77,10 +77,10 @@
                 <section>
                     <p style="font-size: 100%">Introduction</p>
                     <hr>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Principes de la localisation</p>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Objectifs du projet</p>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Démarche de ce projet</p>
-                    <p class="fragment fade-in" style="font-size: 80%" align=left>Résultats et perspectives</p>
+                    <p style="font-size: 80%" align=left>Principes de la localisation</p>
+                    <p style="font-size: 80%" align=left>Objectifs du projet</p>
+                    <p style="font-size: 80%" align=left>Démarche de ce projet</p>
+                    <p style="font-size: 80%" align=left>Résultats et perspectives</p>
                     <aside class="notes">
                     Notes Introduction.<br>
                     - Choix FPGA, traitement signal, temps réel<br>
@@ -96,10 +96,10 @@
                         Qu'est-ce que LoRa ?
                         <hr>
                         <img style="float: right" src="images/img_illustration_LoRaMote.jpg" height="300">
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Lien RF pour applications IoT</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Innovation technologique - Semtech</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une modulation simple et efficace sur de longues distances</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>LoRa la couche PHY et LoRaWAN la couche de routage</p>
+                        <p style="font-size: 80%" align=left>Lien RF pour applications IoT</p>
+                        <p style="font-size: 80%" align=left>Innovation technologique - Semtech</p>
+                        <p style="font-size: 80%" align=left>Une modulation simple et efficace sur des distances de plusieurs Km</p>
+                        <p style="font-size: 80%" align=left>LoRa la couche PHY et LoRaWAN la couche de routage</p>
                         <p class="fragment fade-in" style="font-size: 80%"><br>En résumé, lien faible consommation couvrant de grandes distances</p>
                     <aside class="notes">
                     Notes LoRa.<br>
@@ -123,12 +123,12 @@
                     <section>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>GPS : Les satellites émettent un signal synchrone</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>GPS : Le récepteur régénère l'horloge et calcule sa position</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : L'émetteur est passif</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Les récepteurs doivent être synchronisés et calculent</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>DToA : Le réseau GPS est utilisé comme source de temps par les récepteurs</p>
+                        <p style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
+                        <p class="fragment fade-in" style="font-size: 75%" align=left>GPS : Les satellites émettent un signal synchrone<br>
+                        GPS : Le récepteur régénère l'horloge et calcule sa position</p>
+                        <p class="fragment fade-in" style="font-size: 75%" align=left>DToA : L'émetteur n'a pas de notion de temps<br>
+                        DToA : Les récepteurs doivent être synchronisés et calculent la position<br>
+                        DToA : Le réseau GPS est utilisé comme source de synchronisation par les récepteurs</p>
                     <aside class="notes">
                     Notes DToA.<br>
                     - Différence GPS vs DToA<br>
@@ -170,11 +170,11 @@
                     <section data-transition="none">
                         Quelques grandeurs à retenir
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~4 mètres)</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Une dérive d'une s/an équivaut à une dérive de 31 ns s<sup>-1</sup></p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Le <em>temps en vol</em> d'un message de 32 symboles peut atteindre 1.6 [s] </p>
+                        <p style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
+                        <p style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
+                        <p style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~4 mètres)</p>
+                        <!-- <p class="fragment fade-in" style="font-size: 80%" align=left>Une dérive d'une s/an équivaut à une dérive de 31 ns s<sup>-1</sup></p>-->
+                        <p style="font-size: 80%" align=left>Le <em>temps en vol</em> d'un paquet LoRa peut être de plus d'une seconde</p>
                     </section>
                 </section>
 
@@ -185,35 +185,14 @@
                         Qu'est-ce que le Software Defined Radio (<em>SDR</em>) ?
                         <hr>
                         <img style="float: right" src="images/img_illustration_B200.png" height="200">
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Un système d'acquisition de signal RF</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Travaille sur une plage de fréquences étendues (de 70MHz à 6GHz)</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>résolution de 50 Msamples/s</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Outils de prototypage</p>
+                        <p style="font-size: 90%" align=left>Un système d'acquisition de signal RF</p>
+                        <p style="font-size: 90%" align=left>Travaille sur une plage de fréquences étendues (de 70MHz à 6GHz)</p>
+                        <p style="font-size: 90%" align=left>résolution de 50 Msamples/s</p>
+                        <p style="font-size: 90%" align=left>Outils de prototypage</p>
                     <aside class="notes">
                     Notes SDR.<br>
                     - Outils de prototypage<br>
                     <br>
-                    </aside>
-                    </section>
-                    <!-- Transciever vs Module LoRa-->
-                    <section data-transition="none">
-                        Le transciever LoRa de Semtech vs. <em>SDR</em>
-                        <hr>
-                        <img src="images/img_LoRa_semtech_1272_0.svg" height="320">
-                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
-                    <aside class="notes">
-                    Notes Modem LoRa vs SDR.<br>
-                    - Ce composant à une fonction spécifique<br>
-                    </aside>
-                    </section>
-                    <section data-transition="none">
-                        Le transciever LoRa de Semtech vs. <em>SDR</em>
-                        <hr>
-                        <img src="images/img_LoRa_semtech_1272_1.svg" height="320">
-                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
-                    <aside class="notes">
-                    Notes Modem LoRa vs SDR.<br>
-                    - Ce composant à une fonction spécifique<br>
                     </aside>
                     </section>
                     <!-- Transciever SDR -->
@@ -267,21 +246,56 @@
                     - En SDR la fonction est implémentée au niveau logiciel<br>
                     </aside>
                     </section>
-                    <!-- Le SDR -->
+                    <section data-transition="none">
+                        Software Defined Radio <em>SDR</em>
+                        <hr>
+                        <img src="images/AD9364_schema_5.svg" height="350">
+                        <p style="font-size: 80%" align=center>Application RF implémentée au niveau logiciel</p>
+                    <aside class="notes">
+                    Notes applications SDR.<br>
+                    - En SDR la fonction est implémentée au niveau logiciel<br>
+                    </aside>
+                    </section>
+                    <!-- Transciever vs Module LoRa-->
+                    <section data-transition="none">
+                        Le transciever LoRa de Semtech vs. <em>SDR</em>
+                        <hr>
+                        <img src="images/img_LoRa_semtech_1272_0.svg" height="320">
+                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
+                    <aside class="notes">
+                    Notes Modem LoRa vs SDR.<br>
+                    - Ce composant à une fonction spécifique<br>
+                    </aside>
+                    </section>
+                    <!--<section data-transition="none">
+                        Le transciever LoRa de Semtech vs. <em>SDR</em>
+                        <hr>
+                        <img src="images/img_LoRa_semtech_1272_1.svg" height="320">
+                        <p style="font-size: 80%" align=center>ASIC dédié à une application RF spécifique</p>
+                    <aside class="notes">
+                    Notes Modem LoRa vs SDR.<br>
+                    - Ce composant à une fonction spécifique<br>
+                    </aside>
+                    </section>-->
                 </section>
 
                 <!-- L'architecture du système DToA -->
                 <section>
-                    <section>
+                    <!-- L'architecture -->
+                    <section data-transition="none">
                         <p>L'architecture du système</p>
                         <hr>
-                        <img style="float: center" src="images/schema_architecture.png" height="500">
-                        <!-- <ul>
-                            <p class="fragment fade-in">Software Defined Radio - SDR</p>
-                            <p class="fragment fade-in">permet l'aquisition/traitement d'un signal radio</p>
-                            <p class="fragment fade-in">FPGA Xilinx Spartan 6</p>
-                            <p class="fragment fade-in">API C++ comuniquant avec le <em>core</em> du FPGA</p>
-                        </ul> -->
+                        <img style="float: center" src="images/architecture_simple_0.svg" height="500">
+                    </section>
+                    <section data-transition="none">
+                        <p>L'architecture du système</p>
+                        <hr>
+                        <img style="float: center" src="images/architecture_simple_1.svg" height="500">
+                    </section>
+                    <section data-transition="none">
+                        <p>L'architecture du système</p>
+                        <hr>
+                        <img style="float: center" src="images/architecture_simple_2.svg" height="500">
                     </section>
                     <!-- Le matériel utilisé -->
                     <section>
@@ -290,11 +304,41 @@
                         <img style="float: center" src="images/img_ensemble_cartes.png" height="550">
                     </section>
                     <!-- La synchroniastion des récepteurs -->
-                    <section>
+                    <section data-transition="none">
+                        <p>Le fonctionnement du compteur</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_0.svg" height="350">
+                        <p style="font-size: 80%" align=center>Un compteur plus un registre</p>
+                    </section>
+                    <section data-transition="none">
+                        <p>Le fonctionnement du compteur</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_1.svg" height="350">
+                        <p style="font-size: 80%" align=center>Un compteur plus un registre</p>
+                    </section>
+                    <section data-transition="none">
+                        <p>Le fonctionnement du compteur</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_2.svg" height="350">
+                        <p style="font-size: 80%" align=center>À 1/2 seconde le registre est incrémenté</p>
+                    </section>
+                    <section data-transition="none">
+                        <p>Le fonctionnement du compteur</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_3.svg" height="350">
+                        <p style="font-size: 80%" align=center>Le compteur à une dérive</p>
+                    </section>
+                    <section data-transition="none">
+                        <p>Le fonctionnement du compteur</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_4.svg" height="350">
+                        <p style="font-size: 80%" align=center>Si un signal PPS arrive, le compteur est écrasé</p>
+                    </section>
+                    <!-- <section>
                         La synchronisation des récepteurs
                         <hr>
                         <img style="float: center" src="images/img_counter_basys3.svg" height="550">
-                    </section>
+                    </section>-->
                 </section>
 
 
@@ -344,7 +388,7 @@
                         Implémentation finale du bloc VHDL
                         <hr>
                         <img src="images/bloc_lora_1.svg" height="400">
-                    </section>-->-->
+                    </section>-->
                 </section>
 
 
@@ -437,15 +481,8 @@
                     </section>
                 </section>
 
-                <!-- Les résultats -->
                 <section>
-                    <section>
-                        Les résultats
-                        <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Les sources d'imprécisions ont été identifiées</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Des solutions techniques existent pour les limiter</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
-                    </section>
+                <!-- Les résultats -->
                     <!-- La synchroniastion des GPS (PPS) -->
                     <!-- <section data-transition="none">
                         Jitter des GPS
@@ -491,9 +528,9 @@
                     </section> -->
                     <!-- La synchroniastion des compteurs -->
                     <section data-transition="none">
-                        Dérive des compteurs
+                        Mesures de dérive des compteurs
                         <hr>
-                        <img src="images/counter1.png" height="400">
+                        <img  class="fragment fade-in" src="images/counter1.png" height="400">
                         <p style="font-size: 80%" align=center>Varie de 0 ns à 250 ns (0-75m)</p>
                     </section>
                     <section data-transition="none">
@@ -537,6 +574,13 @@
                         Mesures de <em>dt</em> pour 40 détections de paquet LoRa
                         <hr>
                         <img src="images/mesures_LoraMote5m.svg" height="400">
+                    </section>
+                    <section>
+                        Les résultats
+                        <hr>
+                        <p class="fragment fade-in" style="font-size: 90%" align=left>Les sources d'imprécisions ont été identifiées</p>
+                        <p class="fragment fade-in" style="font-size: 90%" align=left>Des solutions techniques existent pour les limiter</p>
+                        <p class="fragment fade-in" style="font-size: 90%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
                     </section>
                 </section>
 
