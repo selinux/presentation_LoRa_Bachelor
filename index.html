@@ -305,31 +305,37 @@
                     </section>
                     <!-- La synchroniastion des récepteurs -->
                     <section data-transition="none">
-                        <p>Le fonctionnement du compteur</p>
+                        <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_0.svg" height="350">
                         <p style="font-size: 80%" align=center>Un compteur plus un registre</p>
                     </section>
                     <section data-transition="none">
-                        <p>Le fonctionnement du compteur</p>
+                        <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_1.svg" height="350">
                         <p style="font-size: 80%" align=center>Un compteur plus un registre</p>
                     </section>
                     <section data-transition="none">
-                        <p>Le fonctionnement du compteur</p>
+                        <p>Gestion du temps et synchronisation</p>
+                        <hr>
+                        <img style="float: center" src="images/illustration_compteur_1.1.svg" height="350">
+                        <p style="font-size: 80%" align=center>Un compteur plus un registre</p>
+                    </section>
+                    <section data-transition="none">
+                        <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_2.svg" height="350">
                         <p style="font-size: 80%" align=center>À 1/2 seconde le registre est incrémenté</p>
                     </section>
                     <section data-transition="none">
-                        <p>Le fonctionnement du compteur</p>
+                        <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_3.svg" height="350">
                         <p style="font-size: 80%" align=center>Le compteur à une dérive</p>
                     </section>
                     <section data-transition="none">
-                        <p>Le fonctionnement du compteur</p>
+                        <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_4.svg" height="350">
                         <p style="font-size: 80%" align=center>Si un signal PPS arrive, le compteur est écrasé</p>
@@ -369,7 +375,7 @@
                         <hr>
                         <img src="images/illustration_USRP_B200_dyn_4.svg" height="400">
                     </section>
-                    <section data-transition="none">
+                    <!--<section data-transition="none">
                         Architecture de la carte USRP B200 (SDR)
                         <hr>
                         <img src="images/vue_d_ensemble_intern_0.svg" height="400">
@@ -378,22 +384,22 @@
                         Architecture de la carte USRP B200 (SDR)
                         <hr>
                         <img src="images/vue_d_ensemble_intern_1.svg" height="400">
-                    </section>
-                    <!--<section data-transition="none">
+                    </section>-->
+                    <section data-transition="none">
                         Implémentation idéale du bloc VHDL
                         <hr>
-                        <img src="images/bloc_lora_1.svg" height="400">
+                        <img src="images/bloc_lora_0.svg" height="400">
                     </section>
                     <section data-transition="none">
                         Implémentation finale du bloc VHDL
                         <hr>
                         <img src="images/bloc_lora_1.svg" height="400">
-                    </section>-->
+                    </section>
                 </section>
 
 
                 <!-- La modulation LoRa -->
-                <section>
+                <!--<section>
                     <section>
                      La modulation LoRa
                         <hr>
@@ -421,7 +427,7 @@
                         <hr>
                         <img src="images/chirp_symbol_3.svg" height="400">
                     </section>
-                    <!-- <section data-transition="none">
+                    <section data-transition="none">
                         Modulation par mixing FSK et up-chirp
                         <hr>
                         <img src="images/chirp_symbol_mixing_0.svg" height="300">
@@ -435,7 +441,29 @@
                         Demodulation par mixing LoRa et down-chirp
                         <hr>
                         <img src="images/chirp_symbol_mixing_2.svg" height="300">
-                    </section> -->
+                    </section>
+                </section>-->
+
+                <!-- Les algorithmes de détection -->
+                <section>
+                    <section>
+                        Les algorithmes de détection
+                        <hr>
+                        <p style="font-size: 80%" align=left>Étudier la modulation LoRa</p>
+                        <p class="fragment fade-in" style="font-size: 80%" align=left>Modulation par étalement de spectre (Spread Spectrum)<br>
+                        Utilisation d'un chirp (technologie radars/sonars)<br>
+                        Composition d'une modulation de fréquence (FSK) et d'un chirp</p>
+                    </section>
+                    <!--<section data-transition="none">
+                        La modulation
+                        <hr>
+                        <img src="images/chirp_symbol_1.svg" height="400">
+                    </section>
+                    <section data-transition="none">
+                        La résistance au bruit
+                        <hr>
+                        <img src="images/chirp_symbol_3.svg" height="400">
+                    </section>-->
                     <section data-transition="none">
                         Exemple de transmission
                         <hr>
@@ -445,14 +473,6 @@
                         Exemple de transmission
                         <hr>
                         <img src="images/sample_msg_1.svg" height="300">
-                    </section>
-                </section>
-
-                <!-- Les algorithmes de détection -->
-                <section>
-                    <section>
-                        Les algorithmes de détection
-                        <hr>
                     </section>
                     <section data-transition="none">
                         Algorithme basé sur l'amplitude
@@ -530,7 +550,7 @@
                     <section data-transition="none">
                         Mesures de dérive des compteurs
                         <hr>
-                        <img  class="fragment fade-in" src="images/counter1.png" height="400">
+                        <img src="images/counter1.png" height="400">
                         <p style="font-size: 80%" align=center>Varie de 0 ns à 250 ns (0-75m)</p>
                     </section>
                     <section data-transition="none">
@@ -578,9 +598,9 @@
                     <section>
                         Les résultats
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 90%" align=left>Les sources d'imprécisions ont été identifiées</p>
-                        <p class="fragment fade-in" style="font-size: 90%" align=left>Des solutions techniques existent pour les limiter</p>
-                        <p class="fragment fade-in" style="font-size: 90%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
+                        <p style="font-size: 90%" align=left>Les sources d'imprécisions ont été identifiées</p>
+                        <p style="font-size: 90%" align=left>Des solutions techniques existent pour les limiter</p>
+                        <p style="font-size: 90%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
                     </section>
                 </section>
 
@@ -589,11 +609,11 @@
                     <section>
                         Perspectives et conclusions 
                         <hr>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>La synchronisation des récepteurs est satisfaisante (±40 ns &#8660; ±10m)</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'utilisation de Oven Controlled Oscillator (OCXO) et de GPS de bonne qualité améliorerait encore la précision</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Il reste à trouver un algoritme plus robuste</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'architecture transceiver, FPGA et CPU (ethernet) est validée</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>L'extension à plus de récepteurs permettrait une géolocalisation</p>
+                        <p style="font-size: 80%" align=left>La synchronisation des récepteurs est satisfaisante (±40 ns &#8660; ±10m)</p>
+                        <p style="font-size: 80%" align=left>L'utilisation de Oven Controlled Oscillator (OCXO) et de GPS de bonne qualité améliorerait encore la précision</p>
+                        <p style="font-size: 80%" align=left>Il reste à trouver un algoritme plus robuste</p>
+                        <p style="font-size: 80%" align=left>L'architecture transceiver, FPGA et CPU (ethernet) est validée</p>
+                        <p style="font-size: 80%" align=left>L'extension à plus de récepteurs permettrait une géolocalisation</p>
                     </section>
                 </section>
 

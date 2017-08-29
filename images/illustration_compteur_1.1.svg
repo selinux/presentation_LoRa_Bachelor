@@ -15,7 +15,7 @@
    version="1.1"
    id="svg6968"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="illustration_compteur.svg">
+   sodipodi:docname="illustration_compteur_1.1.svg">
   <defs
      id="defs6962" />
   <sodipodi:namedview
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -142,7 +142,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="slide0"
-     style="display:inline">
+     style="display:none">
     <text
        transform="translate(13.607142,-85.333327)"
        xml:space="preserve"
@@ -246,7 +246,7 @@
      inkscape:groupmode="layer"
      id="g53841"
      inkscape:label="slide1.1"
-     style="display:none">
+     style="display:inline">
     <text
        transform="translate(13.607142,-85.333327)"
        xml:space="preserve"

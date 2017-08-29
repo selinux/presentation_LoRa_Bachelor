@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="341.37402"
-     inkscape:cy="230.73719"
+     inkscape:zoom="1.4"
+     inkscape:cx="260.19335"
+     inkscape:cy="372.16858"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,10 +38,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1916"
-     inkscape:window-height="1161"
+     inkscape:window-width="1920"
+     inkscape:window-height="1200"
      inkscape:window-x="0"
-     inkscape:window-y="18"
+     inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata6915">
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -279,28 +279,28 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:6.43922186px;line-height:4.02451372px;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#576677;fill-opacity:1;stroke:none;stroke-width:0.16098055px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-16.445518"
-       y="169.95355"
+       y="174.86725"
        id="text7488-0-7-1"><tspan
          sodipodi:role="line"
          id="tspan7486-9-0-5"
          x="-16.445518"
-         y="169.95355"
-         style="text-align:start;text-anchor:start;fill:#576677;fill-opacity:1;stroke-width:0.16098055px">vita_time</tspan></text>
+         y="174.86725"
+         style="text-align:start;text-anchor:start;fill:#576677;fill-opacity:1;stroke-width:0.16098055px">time_cpt</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#919faf;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 18.690926,176.44467 3.217309,-5.57255"
+       d="m 18.690926,181.35836 3.217309,-5.57255"
        id="path7519-2-2-5"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.33659935px;line-height:2.71037459px;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#576677;fill-opacity:1;stroke:#000000;stroke-width:0.10841498px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.26666667"
        x="20.301701"
-       y="170.48497"
+       y="175.39867"
        id="text7523-1-3-8"><tspan
          sodipodi:role="line"
          id="tspan7521-5-4-2"
          x="20.301701"
-         y="170.48497"
+         y="175.39867"
          style="fill:#576677;fill-opacity:1;stroke:#000000;stroke-width:0.10841498px;stroke-opacity:0.26666667">64</tspan></text>
     <path
        style="opacity:0.4;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.26666667"
@@ -460,12 +460,6 @@
          x="77.339767"
          y="172.00609"
          style="fill:#576677;fill-opacity:1;stroke-width:0.10413629px">en</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#919faf;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 130.88855,201.15402 0.0312,-20.7085 H 77.501758 V 169.2202"
-       id="path8020"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:6.43922186px;line-height:4.02451372px;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#576677;fill-opacity:1;stroke:none;stroke-width:0.16098055px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -477,6 +471,12 @@
          x="145.65627"
          y="177.07848"
          style="text-align:end;text-anchor:end;fill:#576677;fill-opacity:1;stroke-width:0.16098055px">lora_trigger</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#919faf;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 130.88855,201.15402 0.0312,-20.7085 H 77.501758 l 0,-7.11483"
+       id="path8020"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#919faf;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 54.198436,178.13197 v -9.02361"
