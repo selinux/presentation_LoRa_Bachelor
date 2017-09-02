@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="sample_msg_0.svg">
+   sodipodi:docname="sample_msg_2.svg">
   <defs
      id="defs2">
     <clipPath
@@ -228,7 +228,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="slide1"
-     style="display:none">
+     style="display:inline">
     <rect
        style="display:inline;opacity:1;vector-effect:none;fill:#c1c1c1;fill-opacity:0.28099174;fill-rule:evenodd;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.54509804"
        id="rect1334"
@@ -293,7 +293,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="slide2"
-     style="display:none">
+     style="display:inline">
     <g
        style="display:inline"
        id="g1408">

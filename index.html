@@ -57,38 +57,14 @@
                 </section>
 
                 <!-- Table of content -->
-                <!--<section>
-                   <p style="font-size: 100%">Table des matières</p>
-                   <hr>
-                   <p style="font-size: 50%" align=left>Introduction</p>
-                   <p style="font-size: 50%" align=left>Qu'est-ce que LoRa ?</p>
-                   <p style="font-size: 50%" align=left>Le principe du DToA</p>
-                   <p style="font-size: 50%" align=left>Software Define Radio (SDR)</p>
-                   <p style="font-size: 50%" align=left>L'architecture du système</p>
-                   <p style="font-size: 50%" align=left>Le matériel utilisé</p>
-                   <p style="font-size: 50%" align=left>La synchronisation des récepteurs</p>
-                   <p style="font-size: 50%" align=left>Les modifications au niveau du FPGA</p>
-                   <p style="font-size: 50%" align=left>La modulation LoRa</p>
-                   <p style="font-size: 50%" align=left>Les algorithmes de détection</p>
-                   <p style="font-size: 50%" align=left>Les résultats</p>
-                   <p style="font-size: 50%" align=left>Perspectives et conclusions</p>
-                </section> -->
-
                 <!-- Introduction -->
                 <section>
                     <p style="font-size: 100%">Introduction</p>
                     <hr>
-                    <p style="font-size: 80%" align=left>Principes de la localisation</p>
+                    <p style="font-size: 80%" align=left>Principes de localisation</p>
                     <p style="font-size: 80%" align=left>Objectifs du projet</p>
-                    <p style="font-size: 80%" align=left>Démarche de ce projet</p>
+                    <p style="font-size: 80%" align=left>Déroulement de ce projet</p>
                     <p style="font-size: 80%" align=left>Résultats et perspectives</p>
-                    <aside class="notes">
-                    Notes Introduction.<br>
-                    - Choix FPGA, traitement signal, temps réel<br>
-                    - <br>
-                    - Objectif localiser un objet<br>
-                    - <br>
-                    </aside>
                 </section>
 
                 <!-- Qu'est-ce que LoRa ? -->
@@ -98,30 +74,80 @@
                         <hr>
                         <img style="float: right" src="images/img_illustration_LoRaMote.jpg" height="300">
                         <p style="font-size: 80%" align=left>Lien RF pour applications IoT</p>
-                        <p style="font-size: 80%" align=left>Innovation technologique - Semtech</p>
-                        <p style="font-size: 80%" align=left>Une modulation simple et efficace sur des distances de plusieurs Km</p>
-                        <p style="font-size: 80%" align=left>LoRa la couche PHY et LoRaWAN la couche de routage</p>
+                        <p style="font-size: 80%" align=left>Les objets sortent de veille pour uploader leurs data</p>
+                        <p style="font-size: 80%" align=left>Une modulation pouvant porter sur plusieurs Km</p>
+                        <p style="font-size: 80%" align=left>Nécessite une infrastructure (gateway) pour router les data vers les applications</p>
                         <p class="fragment fade-in" style="font-size: 80%"><br>En résumé, lien faible consommation couvrant de grandes distances</p>
-                    <aside class="notes">
-                    Notes LoRa.<br>
-                    - Gds distances donc mesurables<br>
-                    - Lien principalement ascendant<br>
-                    - Faible consommation veille<br>
-                    </aside>
                     </section>
-
+                    <!-- Architecture LoRa -->
+                    <section data-transition="none">
+                        Architecture d'un réseau LoRa
+                        <hr>
+                        <img src="images/LoRaWAN_arch_0.svg" height="400">
+                        <p style="font-size: 80%" align=center>Les LoRaMotes uploadent leurs data puis se mettent en veille</p>
+                    </section>
+                    <section data-transition="none">
+                        Architecture d'un réseau LoRa
+                        <hr>
+                        <img src="images/LoRaWAN_arch_1.svg" height="400">
+                        <p style="font-size: 80%" align=center>Les LoRaMotes uploadent leurs data puis se mettent en veille</p>
+                    </section>
+                    <section data-transition="none">
+                        Architecture d'un réseau LoRa
+                        <hr>
+                        <img src="images/LoRaWAN_arch_2.svg" height="400">
+                        <p style="font-size: 80%" align=center>Les LoRaMotes uploadent leurs data puis se mettent en veille</p>
+                    </section>
                 </section>
 
                 <!-- Le principe du DToA -->
                 <section>
-                    <!-- Video illustration -->
-                    <!--<section>
-                        Localisation par <em>Difference in Time of Arrival</em>
+                    <!-- Architecture int ou ext ? -->
+                    <section data-transition="none">
+                        Les différentes approches de localisation
                         <hr>
-                        <iframe width="1280" height="600" src="https://www.youtube-nocookie.com/embed/aIljMtPYr28?rel=0&showinfo=0&iv_load_policy=3&controls=2&autoplay=1&loop=1&playlist=aIljMtPYr28" frameborder="0" allowfullscreen></iframe>
-                    </section>-->
+                        <img src="images/localisation_arch_0.svg" height="400">
+                        <p style="font-size: 80%" align=center>L'architecture se compose généralement de balises et de mobiles</p>
+                    </section>
+                    <section data-transition="none">
+                        Les différentes approches de localisation
+                        <hr>
+                        <img src="images/localisation_arch_1.svg" height="400">
+                        <p style="font-size: 80%" align=center>Est-ce que ce sont les mobilent qui doivent se localiser ?</p>
+                    </section>
+                    <section data-transition="none">
+                        Les différentes approches de localisation
+                        <hr>
+                        <img src="images/localisation_arch_2.svg" height="400">
+                        <p style="font-size: 80%" align=center>...ou le besoin de localisation vient de l'extérieur ?</p>
+                    </section>
+                    <!-- Architecture ToF -->
+                    <section data-transition="none">
+                        Localisation par Time of Flight (ToF)
+                        <hr>
+                        <img src="images/ToF_arch_0.svg" height="400">
+                        <p style="font-size: 80%" align=center>Les balises et les mobiles doivent être synchronisés</p>
+                    </section>
+                    <section data-transition="none">
+                        Localisation par Time of Flight (ToF)
+                        <hr>
+                        <img src="images/ToF_arch_1.svg" height="400">
+                        <p style="font-size: 80%" align=center>il faut connaître le(s) temps de départ(s) et ceux d'arrivées</p>
+                    </section>
+                    <section data-transition="none">
+                        Localisation par Difference in Time of Arrival (DToA)
+                        <hr>
+                        <img src="images/DToA_arch_0.svg" height="400">
+                        <p style="font-size: 80%" align=center>Le LoRaMote n'a pas besoin d'être synchronisé</p>
+                    </section>
+                    <section data-transition="none">
+                        Localisation par Difference in Time of Arrival (DToA)
+                        <hr>
+                        <img src="images/DToA_arch_1.svg" height="400">
+                        <p style="font-size: 80%" align=center>seuls les temps d'arrivées sont nécessaires</p>
+                    </section>
                     <!-- DToA vs ToF -->
-                    <section>
+                    <!-- <section>
                         Localisation par <em>Difference in Time of Arrival</em>
                         <hr>
                         <p style="font-size: 80%" align=left>Time of Flight (ToF) vs. DToA</p>
@@ -135,7 +161,7 @@
                     - Différence GPS vs DToA<br>
                     - Émetteur passif donc économie d'énérgie cohérent avec LoRa<br>
                     </aside>
-                    </section>
+                    </section> -->
                     <!-- Conversion temps distances -->
                     <section data-transition="none">
                         Conversion du temps en distance
@@ -171,9 +197,9 @@
                     <section data-transition="none">
                         Quelques grandeurs à retenir
                         <hr>
-                        <p style="font-size: 80%" align=left>La vitesse de propagation d'une onde RF est de 2/3 de la vitesse de la lumière</p>
-                        <p style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en 4-5 ns</p>
-                        <p style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~4 mètres)</p>
+                        <p style="font-size: 80%" align=left>Les ondes RF se propagent à la vitesse de la lumière</p>
+                        <p style="font-size: 80%" align=left>Une onde RF parcours 1 mètre en ~4 ns</p>
+                        <p style="font-size: 80%" align=left>Une fréquence de 50MHz &#8660; une période de 20 ns (~5 mètres)</p>
                         <!-- <p class="fragment fade-in" style="font-size: 80%" align=left>Une dérive d'une s/an équivaut à une dérive de 31 ns s<sup>-1</sup></p>-->
                         <p style="font-size: 80%" align=left>Le <em>temps en vol</em> d'un paquet LoRa peut être de plus d'une seconde</p>
                     </section>
@@ -183,7 +209,7 @@
                 <section>
                     <!-- Qu'est-ce que le SDR-->
                     <section>
-                        Qu'est-ce que le Software Defined Radio (<em>SDR</em>) ?
+                        <p style="font-size: 98%" align=center>Qu'est-ce que le Software Defined Radio (<em>SDR</em>) ?</p>
                         <hr>
                         <img style="float: right" src="images/img_illustration_B200.png" height="200">
                         <p style="font-size: 90%" align=left>Un système d'acquisition de signal RF</p>
@@ -283,11 +309,11 @@
                 <!-- L'architecture du système DToA -->
                 <section>
                     <!-- L'architecture -->
-                    <section data-transition="none">
+                    <!-- <section data-transition="none">
                         <p>L'architecture du système</p>
                         <hr>
                         <img style="float: center" src="images/architecture_simple_0.svg" height="500">
-                    </section>
+                    </section> -->
                     <section data-transition="none">
                         <p>L'architecture du système</p>
                         <hr>
@@ -299,10 +325,15 @@
                         <img style="float: center" src="images/architecture_simple_2.svg" height="500">
                     </section>
                     <!-- Le matériel utilisé -->
-                    <section>
+                    <section data-transition="none">
                         Le matériel utilisé
                         <hr>
-                        <img style="float: center" src="images/img_ensemble_cartes.png" height="550">
+                        <img style="float: center" src="images/materiels_0.png" height="550">
+                    </section>
+                    <section data-transition="none">
+                        Le matériel utilisé
+                        <hr>
+                        <img style="float: center" src="images/materiels_1.png" height="550">
                     </section>
                     <!-- <section>
                         La synchronisation des récepteurs
@@ -410,33 +441,20 @@
 
                 <!-- Les algorithmes de détection -->
                 <section>
-                    <section>
+                    <section data-transition="none">
                         Les algorithmes de détection
-                        <hr>
-                        <p style="font-size: 80%" align=left>Étudier la modulation LoRa</p>
-                        <p class="fragment fade-in" style="font-size: 80%" align=left>Modulation par étalement de spectre (Spread Spectrum)<br>
-                        Utilisation d'un chirp (technologie radars/sonars)<br>
-                        Composition d'une modulation de fréquence (FSK) et d'un chirp</p>
-                    </section>
-                    <!--<section data-transition="none">
-                        La modulation
-                        <hr>
-                        <img src="images/chirp_symbol_1.svg" height="400">
-                    </section>
-                    <section data-transition="none">
-                        La résistance au bruit
-                        <hr>
-                        <img src="images/chirp_symbol_3.svg" height="400">
-                    </section>-->
-                    <section data-transition="none">
-                        Exemple de transmission
                         <hr>
                         <img src="images/sample_msg_0.svg" height="300">
                     </section>
                     <section data-transition="none">
-                        Exemple de transmission
+                        Les algorithmes de détection
                         <hr>
                         <img src="images/sample_msg_1.svg" height="300">
+                    </section>
+                    <section data-transition="none">
+                        Les algorithmes de détection
+                        <hr>
+                        <img src="images/sample_msg_2.svg" height="300">
                     </section>
                     <section data-transition="none">
                         Algorithme basé sur l'amplitude
@@ -461,22 +479,22 @@
                     <section data-transition="none">
                         Algorithme basé sur des FFT 
                         <hr>
-                        <img src="images/algo_FFT_0.svg" height="350">
+                        <img src="images/algo_FFT_0.svg" height="330">
                     </section>
                     <section data-transition="none">
                         Algorithme basé sur des FFT 
                         <hr>
-                        <img src="images/algo_FFT_1.svg" height="350">
+                        <img src="images/algo_FFT_1.svg" height="330">
                     </section>
                     <section data-transition="none">
                         Algorithme basé sur des FFT 
                         <hr>
-                        <img src="images/algo_FFT_2.svg" height="350">
+                        <img src="images/algo_FFT_2.svg" height="330">
                     </section>
                     <section data-transition="none">
                         Algorithme basé sur des FFT 
                         <hr>
-                        <img src="images/algo_FFT_3.svg" height="350">
+                        <img src="images/algo_FFT_3.svg" height="330">
                     </section>
                 </section>
 
@@ -504,7 +522,7 @@
                         <p>Gestion du temps et synchronisation</p>
                         <hr>
                         <img style="float: center" src="images/illustration_compteur_2.svg" height="350">
-                        <p style="font-size: 80%" align=center>À 1/2 seconde le registre est incrémenté</p>
+                        <p style="font-size: 80%" align=center>À la 1/2 seconde le registre est incrémenté</p>
                     </section>
                     <section data-transition="none">
                         <p>Gestion du temps et synchronisation</p>
@@ -598,26 +616,27 @@
                         Synchronisation par émulateur (compensé)
                         <hr>
                         <img src="images/counter6.png" height="400">
-                        <p style="font-size: 80%" align=center>Equart maximum de &plusmn; 20 ns (~5m)</p>
+                        <p style="font-size: 80%" align=center>Erreurs inférieures à &plusmn; 20 ns (~5m)</p>
                     </section>
                     <section data-transition="none">
                         Synchronisation par GPS (compensé)
                         <hr>
                         <img src="images/counter7.png" height="400">
-                        <p style="font-size: 80%" align=center>Equart maximum de &plusmn; 40 ns (~10m)</p>
+                        <p style="font-size: 80%" align=center>Erreurs inférieures à &plusmn; 40 ns (~10m)</p>
                     </section>
                     <section data-transition="none">
                         Mesures de <em>dt</em> pour 40 détections de paquet LoRa
                         <hr>
                         <img src="images/mesures_LoraMote5m.svg" height="400">
+                        <p style="font-size: 80%" align=center>Une erreur de 25m sur plusieurs Km est un bon résultat</p>
                     </section>
-                    <section>
+                    <!-- <section>
                         Les résultats
                         <hr>
                         <p style="font-size: 90%" align=left>Les sources d'imprécisions ont été identifiées</p>
                         <p style="font-size: 90%" align=left>Des solutions techniques existent pour les limiter</p>
                         <p style="font-size: 90%" align=left>Le système est suffisament précis pour en tirer une information pertinentes</p>
-                    </section>
+                    </section> -->
                 </section>
 
                 <!-- Perspectives et conclusions -->
@@ -630,6 +649,7 @@
                         <p style="font-size: 80%" align=left>Il reste à trouver un algoritme plus robuste</p>
                         <p style="font-size: 80%" align=left>L'architecture transceiver, FPGA et CPU (ethernet) est validée</p>
                         <p style="font-size: 80%" align=left>L'extension à plus de récepteurs permettrait une géolocalisation</p>
+                        <p style="font-size: 80%" align=left>Le payload des messages permettrait de mieux associer les paquets à comparer</p>
                     </section>
                 </section>
 
@@ -666,7 +686,8 @@
                     transition: 'convex',
                     controls: true,
                     progress: true,
-                    slideNumber: 'c/t',
+                    slideNumber: 'h.v',
+                    //slideNumber: 'c/t',
                     showSlideNumber: 'all',
                     overview: true,
                     center: true,
